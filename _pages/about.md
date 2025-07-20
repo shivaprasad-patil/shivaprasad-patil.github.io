@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "academicpages is a ready-to-fork GitHub Pages template for academic personal websites"
+title: "About me"
 excerpt: "About me"
 author_profile: true
 redirect_from: 
@@ -8,43 +8,105 @@ redirect_from:
   - /about.html
 ---
 
-This is the front page of a website that is powered by the [academicpages template](https://github.com/academicpages/academicpages.github.io) and hosted on GitHub pages. [GitHub pages](https://pages.github.com) is a free service in which websites are built and hosted from code and data stored in a GitHub repository, automatically updating when a new commit is made to the respository. This template was forked from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/) created by Michael Rose, and then extended to support the kinds of content that academics have: publications, talks, teaching, a portfolio, blog posts, and a dynamically-generated CV. You can fork [this repository](https://github.com/academicpages/academicpages.github.io) right now, modify the configuration and markdown files, add your own PDFs and other content, and have your own site for free, with no ads! An older version of this template powers my own personal website at [stuartgeiger.com](http://stuartgeiger.com), which uses [this Github repository](https://github.com/staeiou/staeiou.github.io).
+Hi, I’m Shivaprasad Patil, Associate Director of Bioinformatics – Predictive AI, with a deep passion for transforming drug discovery and precision medicine through the power of data and AI. With over a decade of experience, I specialize in leveraging clinical and genomics data using advanced machine learning and computational biology techniques.
 
-A data-driven personal website
+My core expertise lies in multi-omics data integration across diverse platforms — including bulk, single-cell, and spatial genomics; imaging modalities like Cell Painting and immunofluorescence; and clinical datasets such as EHRs, disease registries, and IHC. I thrive in collaborative, cross-functional environments, driving biomarker discovery and translational insights that push therapeutics forward through the development pipeline.
+
+🌟 Key Highlights:
+------
+
+• 🧬 I specialize in translating complex multi-omics data from clinical studies and model systems into actionable insights that impact the drug discovery pipeline.
+
+• 🚀 My expertise spans the entire drug development spectrum, from multi-omics characterization of 
+ disease phenotypes to biomarker discovery and understanding mechanisms of response.
+
+• 🔍Target Identification: Seeking the elusive targets—the molecular keys that unlock mysteries of 
+ Cancer, Alzheimer's and SLE by integrating multi-omics data, to pinpoint molecular subtypes, predict disease progression, and tailor personalized treatments. 🎯💡
+
+• 📊 I excel in clinical trial data analysis and am well-versed in working within regulatory environments, 
+ ensuring data integrity and compliance.
+
+• 🌐 Collaborating across diverse teams, both internally and with external partners, is my forte. I believe 
+ in fostering a collaborative spirit to achieve project success.
+
+• 📢 Effective communication is at the core of my work. I take pride in presenting complex analysis 
+ findings with scientific rigor to key stakeholders in a timely manner.
+
+• 🧪 I have a proven track record of leadership, overseeing and organizing teams to deliver decision- 
+ driving data.
+
+• 📈 Additionally, I actively contribute to cultivating a strong scientific culture by implementing state-of- 
+ the-art technologies and models within my department.
+
+My capabilities extend to data integration, statistical analysis, biological modeling, and the implementation of innovative computational solutions to address complex scientific challenges.
+
+Let's collaborate to advance drug discovery, unravel the intricacies of disease biology, and drive scientific excellence. 
+Feel free to reach out to me.
+
+
+Experience
 ======
-Like many other Jekyll-based GitHub Pages templates, academicpages makes you separate the website's content from its form. The content & metadata of your website are in structured markdown files, while various other files constitute the theme, specifying how to transform that content & metadata into HTML pages. You keep these various markdown (.md), YAML (.yml), HTML, and CSS files in a public GitHub repository. Each time you commit and push an update to the repository, the [GitHub pages](https://pages.github.com/) service creates static HTML pages based on these files, which are hosted on GitHub's servers free of charge.
 
-Many of the features of dynamic content management systems (like Wordpress) can be achieved in this fashion, using a fraction of the computational resources and with far less vulnerability to hacking and DDoSing. You can also modify the theme to your heart's content without touching the content of your site. If you get to a point where you've broken something in Jekyll/HTML/CSS beyond repair, your markdown files describing your talks, publications, etc. are safe. You can rollback the changes or even delete the repository and start over -- just be sure to save the markdown files! Finally, you can also write scripts that process the structured data on the site, such as [this one](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.ipynb) that analyzes metadata in pages about talks to display [a map of every location you've given a talk](https://academicpages.github.io/talkmap.html).
+Associate Director Bioinformatics & Predicitive AI: AstraZeneca
+------
+🤖 Implementing new predictive capabilities using AI and bioinformatics to translate omics and imaging data into discoveries of novel mechanisms of action for compounds.
 
-Getting started
+🧬💻 Building in silico pipelines to advance multi-omics technologies (bulk & spatial) for refining toxicity predictions and accelerating candidate drug prioritization.
+
+🧠🖼️ Developing AI models to extract predictive morphological features from Cell Painting, delivering detailed and cost-effective safety insights.
+
+🧪📊 Building proteomics-driven models to gain deep mechanistic insights and improve compound selection in early drug discovery.
+
+
+Scientific Investigator - Computational Biology: GSK
+------
+🔬 Analyzing and Integrating Multi-Omics Data: Proficient in the analysis and integration of multi-omics data, including single-cell level analyses, to uncover intricate biological insights.
+
+📊 Clinical Trial Data Expertise: Experienced in conducting post-hoc analyses of data from clinical trials, driving the exploration of new precision medicine approaches and facilitating biological discoveries.
+
+🧠 Translational iPSC Model for Alzheimer’s Disease: Unraveling the Molecular Maze.
+ - Multi-omics data—genomics, transcriptomics, proteomics, phospho-proteomics, lipidomics, —harmonize to reveal the genetic and molecular symphony of Alzheimer’s. 🎵🔍
+ - Target Identification: Seeking the elusive targets—the molecular keys that unlock Alzheimer’s mysteries. By integrating multi-omics data, to pinpoint molecular subtypes, predict disease progression, and tailor personalized treatments. 🎯💡
+
+
+🧬 Genomics Data Analysis: Adept at harnessing genomics data for reverse translation, enabling patient stratification, and guiding targeted therapies.
+
+🚀 Translational Signature Development: Skilled in identifying and developing translational signatures that enhance indication expansion and model translatability, fostering advancements in drug development.
+
+Bioinformatician / ML Research Scientist: OncoRay - Center for Radiation Research in Oncology
+------
+🔬 Collaborated with multicenter, multidisciplinary teams to predict patient prognosis in Head and Neck Squamous Cell Carcinoma, spanning 8 cohorts and involving 1500 patients.
+
+📊 Applied advanced statistical and machine learning techniques to genomics and clinical data, leading to the identification of three groundbreaking biomarkers for personalized radiation oncology.
+
+🎯 Leveraged biomarkers to facilitate patient selection for enhanced individualized treatment options in prospective clinical trials, partnering with over 30 clinicians and experimental scientists.
+
+🎙️ Delivered more than 50 poster and oral presentations, sharing insights and discoveries with the scientific community.
+
+📚 Contributed as a reviewer to the esteemed "Radiotherapy & Oncology" journal, fostering knowledge exchange and scientific advancement.
+
+<br/><img src='/files/Biomarker_Pitch.png'>
+
+Bioinformatician
+------
+🧬 Pioneered the creation of an innovative pipeline for the analysis of viral metagenomic data, pushing the boundaries of bioinformatics.
+
+🔍 Assembled an extensive catalog of 3000 viral genes and proteins, contributing to the advancement of viral genomics research.
+
+🏥 Successfully identified critical biomarkers for the early diagnosis of liver fibrosis in a cohort of 200 patients, facilitating early intervention and patient care.
+<br/><img src='/files/Taxonomic_ann.jpeg'>
+
+Bioinformatician
+------
+🌀 Discovered and annotated an impressive portfolio of over 60,000 novel Circular RNAs, unraveling new dimensions of genomic research.
+
+🤝 Collaborated extensively with a network of 280 clinicians and researchers spanning over 60 medical and research centers, leveraging Exome-Sequencing for an in-depth exploration of Rare Genetic Diseases through variant prioritization and calling.
+
+🧬 Explored the intricate role of Non-coding RNAs in gene regulation, drawing insights from a diverse array of 38 datasets, contributing to our understanding of genomic complexity.
+<br/><img src='/files/Exome_seq.jpeg'>
+
+Education
 ======
-1. Register a GitHub account if you don't have one and confirm your e-mail (required!)
-1. Fork [this repository](https://github.com/academicpages/academicpages.github.io) by clicking the "fork" button in the top right. 
-1. Go to the repository's settings (rightmost item in the tabs that start with "Code", should be below "Unwatch"). Rename the repository "[your GitHub username].github.io", which will also be your website's URL.
-1. Set site-wide configuration and create content & metadata (see below -- also see [this set of diffs](http://archive.is/3TPas) showing what files were changed to set up [an example site](https://getorg-testacct.github.io) for a user with the username "getorg-testacct")
-1. Upload any files (like PDFs, .zip files, etc.) to the files/ directory. They will appear at https://[your GitHub username].github.io/files/example.pdf.  
-1. Check status by going to the repository settings, in the "GitHub pages" section
+Doctor of Philosophy - PhD, Biostatistics and Biomedicine: Technische Universität Dresden, Germany, 2019-2022.
 
-Site-wide configuration
-------
-The main configuration file for the site is in the base directory in [_config.yml](https://github.com/academicpages/academicpages.github.io/blob/master/_config.yml), which defines the content in the sidebars and other site-wide features. You will need to replace the default variables with ones about yourself and your site's github repository. The configuration file for the top menu is in [_data/navigation.yml](https://github.com/academicpages/academicpages.github.io/blob/master/_data/navigation.yml). For example, if you don't have a portfolio or blog posts, you can remove those items from that navigation.yml file to remove them from the header. 
-
-Create content & metadata
-------
-For site content, there is one markdown file for each type of content, which are stored in directories like _publications, _talks, _posts, _teaching, or _pages. For example, each talk is a markdown file in the [_talks directory](https://github.com/academicpages/academicpages.github.io/tree/master/_talks). At the top of each markdown file is structured data in YAML about the talk, which the theme will parse to do lots of cool stuff. The same structured data about a talk is used to generate the list of talks on the [Talks page](https://academicpages.github.io/talks), each [individual page](https://academicpages.github.io/talks/2012-03-01-talk-1) for specific talks, the talks section for the [CV page](https://academicpages.github.io/cv), and the [map of places you've given a talk](https://academicpages.github.io/talkmap.html) (if you run this [python file](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.py) or [Jupyter notebook](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.ipynb), which creates the HTML for the map based on the contents of the _talks directory).
-
-**Markdown generator**
-
-I have also created [a set of Jupyter notebooks](https://github.com/academicpages/academicpages.github.io/tree/master/markdown_generator
-) that converts a CSV containing structured data about talks or presentations into individual markdown files that will be properly formatted for the academicpages template. The sample CSVs in that directory are the ones I used to create my own personal website at stuartgeiger.com. My usual workflow is that I keep a spreadsheet of my publications and talks, then run the code in these notebooks to generate the markdown files, then commit and push them to the GitHub repository.
-
-How to edit your site's GitHub repository
-------
-Many people use a git client to create files on their local computer and then push them to GitHub's servers. If you are not familiar with git, you can directly edit these configuration and markdown files directly in the github.com interface. Navigate to a file (like [this one](https://github.com/academicpages/academicpages.github.io/blob/master/_talks/2012-03-01-talk-1.md) and click the pencil icon in the top right of the content preview (to the right of the "Raw | Blame | History" buttons). You can delete a file by clicking the trashcan icon to the right of the pencil icon. You can also create new files or upload files by navigating to a directory and clicking the "Create new file" or "Upload files" buttons. 
-
-Example: editing a markdown file for a talk
-![Editing a markdown file for a talk](/images/editing-talk.png)
-
-For more info
-------
-More info about configuring academicpages can be found in [the guide](https://academicpages.github.io/markdown/). The [guides for the Minimal Mistakes theme](https://mmistakes.github.io/minimal-mistakes/docs/configuration/) (which this theme was forked from) might also be helpful.
+Integrated BS-­MS in Life ­Sciences: Indian Institute of Science Education and Research Mohali, India 2010-2015.
