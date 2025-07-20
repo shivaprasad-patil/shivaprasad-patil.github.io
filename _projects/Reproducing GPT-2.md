@@ -24,5 +24,4 @@ paper_link: "https://www.biorxiv.org/content/10.1101/2025.04.14.648850v1"
 **🎥 Neural Networks: Zero to Hero by Andrej Karpathy:** [Lecture Series](https://www.youtube.com/playlist?list=PLAqhIrjkxbuWI23v9cThsA9GvCAUhRvKZ)
 
 🧪 **Finally training my model:**
-
     ![Project Image](/files/gpt_2 Medium.jpeg)
