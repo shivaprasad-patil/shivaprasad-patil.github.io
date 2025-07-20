@@ -4,7 +4,6 @@ collection: projects
 
 date: 2025-06-29
 github: "https://github.com/shivaprasad-patil/nano_GPT-2"
-paper_link: "https://www.biorxiv.org/content/10.1101/2025.04.14.648850v1"
 ---
 
 ---
