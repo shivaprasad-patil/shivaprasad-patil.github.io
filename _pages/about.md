@@ -57,6 +57,7 @@ Associate Director Bioinformatics & Predicitive AI: AstraZeneca
 
 🧪📊 Building proteomics-driven models to gain deep mechanistic insights and improve compound selection in early drug discovery.
 
+<br/><img src='/files/Shiva_poster_SDDN_2025.png'>
 
 Scientific Investigator - Computational Biology: GSK
 ------
