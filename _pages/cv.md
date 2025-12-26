@@ -11,4 +11,4 @@ redirect_from:
 
 Scroll down to view CV.
 
-<embed src="/files/Shivaprasad_Patil_CV_2025.pdf" width="100%" height="400px" type="application/pdf">
+<embed src="/files/Shivaprasad_Patil_CV_2025.pdf" width="100%" height="200px" type="application/pdf">
