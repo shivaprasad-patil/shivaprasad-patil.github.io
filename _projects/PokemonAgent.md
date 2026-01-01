@@ -70,4 +70,11 @@ Whether you're interested in AI, gaming, or just want to see some epic Pokemon b
 
 Ready to see your Pokemon battle with the power of artificial intelligence? Check out the project and let me know what you think!
 
-#AI #MachineLearning #LLM #Ollama #Pokemon #Gaming #Python #OpenSource #ArtificialIntelligence #TechProject
+**Get Started:**
+- 📖 [Documentation](https://github.com/shivaprasad-patil/PokemonAgent/blob/main/README.md)
+- 💻 [GitHub Repository](https://github.com/shivaprasad-patil/PokemonAgent)
+- 📧 [Contact](mailto:shivaprasad309319@gmail.com)
+---
+
+**Tags:**  #AI #MachineLearning #LLM #Ollama #Pokemon #Gaming #Python #OpenSource #ArtificialIntelligence #TechProject
+
