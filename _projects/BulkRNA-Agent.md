@@ -183,8 +183,7 @@ I'm actively developing new features:
 ---
 
 ## Try It Today! 🎉
-
-🔗 **GitHub**: https://github.com/shivaprasad-patil/BulkRNA-Agent  
+🔗 **GitHub**: [BulkRNA-Agent](https://github.com/shivaprasad-patil/BulkRNA-Agent)  
 🎥 **Demo Video**: Watch it in action  
 📚 **Documentation**: Complete guides and tutorials included  
 
@@ -199,7 +198,6 @@ Have questions? Found a bug? Want to request a feature?
 - 🐛 Open an issue on GitHub
 - ⭐ Star the repository if you find it useful
 - 🔄 Share with colleagues who might benefit
-- 💬 Let's discuss on LinkedIn!
 
 ---
 
