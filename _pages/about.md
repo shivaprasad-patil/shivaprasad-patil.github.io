@@ -43,11 +43,26 @@ My capabilities extend to data integration, statistical analysis, biological mod
 Let's collaborate to advance drug discovery, unravel the intricacies of disease biology, and drive scientific excellence. 
 Feel free to reach out to me.
 
+🚀 Featured Projects
+======
+
+### [BulkRNA-Agent: AI-Powered Transcriptomics Analysis](https://github.com/shivaprasad-patil/BulkRNA-Agent)
+Open-source AI tool combining dual LLM architecture (reasoning + biomedical models) for intelligent bulk RNA-seq analysis. Features AI-powered design suggestions, interactive visualizations, and 100% local processing for data privacy. Streamlines the entire pipeline from QC to differential expression and enrichment analysis in one intuitive web interface.
+
+### [ScAdver: Adversarial Batch Correction for Single-Cell Data](https://github.com/shivaprasad-patil/ScAdver)
+Python package for adversarial batch correction in single-cell RNA-seq data. Train once on reference data, then project unlimited query batches with sub-second inference (<1s per batch). Features adversarial learning to remove batch effects while preserving biological variation, supports CPU/CUDA/Apple Silicon, and includes adaptive projection with residual adapters for large domain shifts.
+
+### [MultiOmicsBind: Deep Learning for Multi-Omics Integration](https://github.com/shivaprasad-patil/MultiOmicsBind)
+Deep learning framework that brings ImageBind's revolutionary binding modality concept to multi-omics data integration. Enables seamless integration of genomics, transcriptomics, proteomics, and metabolomics data for comprehensive biological insights.
+
+[**View all projects →**](/projects/)
+
+---
 
 Experience
 ======
 
-Associate Director Bioinformatics & Predicitive AI: AstraZeneca
+Associate Director Bioinformatics & Predictive AI: AstraZeneca
 ------
 🤖 Implementing new predictive capabilities using AI and bioinformatics to translate omics and imaging data into discoveries of novel mechanisms of action for compounds.
 
@@ -57,7 +72,6 @@ Associate Director Bioinformatics & Predicitive AI: AstraZeneca
 
 🧪📊 Building proteomics-driven models to gain deep mechanistic insights and improve compound selection in early drug discovery.
 
-<br/><img src='/files/Shiva_poster_SDDN_2025.png'>
 
 Scientific Investigator - Computational Biology: GSK
 ------
@@ -95,7 +109,7 @@ Bioinformatician
 🔍 Assembled an extensive catalog of 3000 viral genes and proteins, contributing to the advancement of viral genomics research.
 
 🏥 Successfully identified critical biomarkers for the early diagnosis of liver fibrosis in a cohort of 200 patients, facilitating early intervention and patient care.
-<br/><img src='/files/Taxonomic_ann.jpeg'>
+
 
 Bioinformatician
 ------

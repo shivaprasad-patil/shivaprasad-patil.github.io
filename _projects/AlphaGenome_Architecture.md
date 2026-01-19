@@ -1,9 +1,11 @@
 ---
 title: "AlphaGenome's U-Net Architecture Implementation"
 collection: projects
-
+excerpt: "Complete implementation of DeepMind's 450M parameter model for genomic sequence analysis and multi-modal predictions."
 date: 2025-10-03
 github: "https://github.com/shivaprasad-patil/AlphaGenome-Model-Architecture"
+header:
+  teaser: /images/alphagenome-thumb.png
 ---
 
 ---

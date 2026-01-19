@@ -1,9 +1,11 @@
 ---
 title: "BulkRNA-Agent: AI-Powered Transcriptomics Analysis."
 collection: projects
-
+excerpt: "Open-source AI tool combining dual LLM architecture for intelligent bulk RNA-seq analysis with 100% local processing."
 date: 2026-01-17
 github: "https://github.com/shivaprasad-patil/BulkRNA-Agent"
+header:
+  teaser: /images/bulkrna-agent-thumb.png
 ---
 # Introducing BulkRNA-Agent: AI-Powered Transcriptomics Analysis Made Easy 🧬🤖
 

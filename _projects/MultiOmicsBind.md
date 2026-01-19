@@ -1,10 +1,12 @@
 ---
 title: "MultiOmicsBind: Deep Learning framework for Multi-Omics Data Integration"
 collection: projects
-
+excerpt: "Deep learning framework applying ImageBind's binding modality concept to integrate genomics, transcriptomics, proteomics, and metabolomics data."
 date: 2025-09-11
 github: "https://github.com/shivaprasad-patil/MultiOmicsBind"
 paper_link: ""
+header:
+  teaser: /images/multiomicsbind-thumb.png
 ---
 
 ---
