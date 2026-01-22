@@ -12,45 +12,15 @@ Hi, I’m Shivaprasad Patil, Associate Director of Bioinformatics – Predictive
 
 My core expertise lies in multi-omics data integration across diverse platforms — including bulk, single-cell, and spatial genomics; imaging modalities like Cell Painting and immunofluorescence; and clinical datasets such as EHRs, disease registries, and IHC. I thrive in collaborative, cross-functional environments, driving biomarker discovery and translational insights that push therapeutics forward through the development pipeline.
 
-🌟 Key Highlights:
-------
 
-• 🧬 I specialize in translating complex multi-omics data from clinical studies and model systems into actionable insights that impact the drug discovery pipeline.
-
-• 🚀 My expertise spans the entire drug development spectrum, from multi-omics characterization of 
- disease phenotypes to biomarker discovery and understanding mechanisms of response.
-
-• 🔍Target Identification: Seeking the elusive targets—the molecular keys that unlock mysteries of 
- Cancer, Alzheimer's and SLE by integrating multi-omics data, to pinpoint molecular subtypes, predict disease progression, and tailor personalized treatments. 🎯💡
-
-• 📊 I excel in clinical trial data analysis and am well-versed in working within regulatory environments, 
- ensuring data integrity and compliance.
-
-• 🌐 Collaborating across diverse teams, both internally and with external partners, is my forte. I believe 
- in fostering a collaborative spirit to achieve project success.
-
-• 📢 Effective communication is at the core of my work. I take pride in presenting complex analysis 
- findings with scientific rigor to key stakeholders in a timely manner.
-
-• 🧪 I have a proven track record of leadership, overseeing and organizing teams to deliver decision- 
- driving data.
-
-• 📈 Additionally, I actively contribute to cultivating a strong scientific culture by implementing state-of- 
- the-art technologies and models within my department.
-
-My capabilities extend to data integration, statistical analysis, biological modeling, and the implementation of innovative computational solutions to address complex scientific challenges.
-
-Let's collaborate to advance drug discovery, unravel the intricacies of disease biology, and drive scientific excellence. 
-Feel free to reach out to me.
-
-🚀 Featured Projects
+Featured Projects
 ======
 
 ### [BulkRNA-Agent: AI-Powered Transcriptomics Analysis](https://github.com/shivaprasad-patil/BulkRNA-Agent)
 Open-source AI tool combining dual LLM architecture (reasoning + biomedical models) for intelligent bulk RNA-seq analysis. Features AI-powered design suggestions, interactive visualizations, and 100% local processing for data privacy. Streamlines the entire pipeline from QC to differential expression and enrichment analysis in one intuitive web interface.
 
 ### [ScAdver: Adversarial Batch Correction for Single-Cell Data](https://github.com/shivaprasad-patil/ScAdver)
-Python package for adversarial batch correction in single-cell RNA-seq data. Train once on reference data, then project unlimited query batches with sub-second inference (<1s per batch). Features adversarial learning to remove batch effects while preserving biological variation, supports CPU/CUDA/Apple Silicon, and includes adaptive projection with residual adapters for large domain shifts.
+Python package that performs adversarial batch correction for single-cell RNA-seq data, eliminating technical batch effects while preserving biological variation and cell type identity. The framework features a train-once, project-forever paradigm—train on reference data, then rapidly transform unlimited query batches without retraining. For challenging scenarios with large protocol shifts (e.g., 10X → Smart-seq2), advanced domain adaptation via residual adapters enables robust cross-technology integration while maintaining biological fidelity.
 
 ### [MultiOmicsBind: Deep Learning for Multi-Omics Integration](https://github.com/shivaprasad-patil/MultiOmicsBind)
 Deep learning framework that brings ImageBind's revolutionary binding modality concept to multi-omics data integration. Enables seamless integration of genomics, transcriptomics, proteomics, and metabolomics data for comprehensive biological insights.
