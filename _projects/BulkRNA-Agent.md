@@ -2,18 +2,24 @@
 title: "BulkRNA-Agent: AI-Powered Transcriptomics Analysis."
 collection: projects
 excerpt: "Open-source AI tool combining dual LLM architecture for intelligent bulk RNA-seq analysis with 100% local processing."
+infographic_url: '/files/BulkRNA_Agent_infographic.png'
+slides_url: '/files/BulkRNA-Agent.pdf'
 date: 2026-01-17
 github: "https://github.com/shivaprasad-patil/BulkRNA-Agent"
+classes: project-detail
 header:
   teaser: /images/bulkrna-agent-thumb.png
 ---
-# Introducing BulkRNA-Agent: AI-Powered Transcriptomics Analysis Made Easy 🧬🤖
 
-**TL;DR:** BulkRNA-Agent is a free, open-source tool that combines artificial intelligence with traditional bioinformatics to revolutionize bulk RNA-seq analysis. With dual LLM architecture, interactive visualizations, and 100% local processing, it's designed for researchers who want powerful insights without compromising data privacy.
+## Introducing BulkRNA-Agent: AI-Powered Transcriptomics Analysis Made Easy 🧬🤖
 
----
+<div class="project-callout">
+  <p><strong>TL;DR:</strong> BulkRNA-Agent is a free, open-source tool that combines artificial intelligence with traditional bioinformatics to revolutionize bulk RNA-seq analysis. With dual LLM architecture, interactive visualizations, and 100% local processing, it's designed for researchers who want powerful insights without compromising data privacy.</p>
+</div>
 
-## The Problem with Traditional RNA-seq Analysis 😓
+<div class="project-divider"></div>
+
+### The Problem with Traditional RNA-seq Analysis 😓
 
 If you've ever analyzed bulk RNA-seq data, you know the pain points:
 
@@ -22,11 +28,11 @@ If you've ever analyzed bulk RNA-seq data, you know the pain points:
 - **Design Complexity**: Choosing the right design formula feels like navigating a maze
 - **Interpretation Challenges**: You get a list of differentially expressed genes... now what?
 
-## Enter BulkRNA-Agent 🚀
+### Enter BulkRNA-Agent 🚀
 
 BulkRNA-Agent is my answer to these challenges. It's an AI-powered tool that brings intelligence to every step of the RNA-seq analysis pipeline.
 
-### 🎯 What Makes It Unique?
+#### 🎯 What Makes It Unique?
 
 #### 1. **Dual LLM Architecture**
 Unlike other tools, BulkRNA-Agent uses TWO specialized language models:
@@ -47,11 +53,11 @@ Everything flows seamlessly in an intuitive web interface.
 #### 4. **Privacy First** 🔒
 Your data never leaves your machine. Everything runs locally using Ollama, so sensitive patient data stays secure.
 
----
+<div class="project-divider"></div>
 
-## Key Features ✨
+### Key Features ✨
 
-### 🔬 Quality Control
+#### 🔬 Quality Control
 - Automated low-count filtering
 - PCA visualization
 - Comprehensive RNAseqQC plots:
@@ -61,20 +67,20 @@ Your data never leaves your machine. Everything runs locally using Ollama, so se
   - Sample clustering heatmaps
   - Multi-PC scatter plots
 
-### 📊 Differential Expression Analysis
+#### 📊 Differential Expression Analysis
 - Powered by DESeq2 and PyDESeq2
 - Interactive volcano and MA plots
 - Automatic normalization
 - Support for complex experimental designs
 - Clear visualization of top genes
 
-### 🧬 Enrichment Analysis
+#### 🧬 Enrichment Analysis
 - GO (Biological Process, Molecular Function, Cellular Component)
 - KEGG pathways
 - Reactome pathways
 - Automatic analysis with adjusted p-values
 
-### 💬 AI Chat Interface
+#### 💬 AI Chat Interface
 Ask questions like:
 - "What are the main biological processes affected?"
 - "Explain the function of gene XYZ"
@@ -82,11 +88,11 @@ Ask questions like:
 
 The agent provides context-aware, intelligent responses!
 
----
+<div class="project-divider"></div>
 
-## How It Works 🛠️
+### How It Works 🛠️
 
-### Installation (3 Steps!)
+#### Installation (3 Steps!)
 
 ```bash
 # 1. Install Ollama and models
@@ -104,7 +110,7 @@ cd BulkRNA-Agent
 
 Open your browser to `http://localhost:7860` and you're ready to go!
 
-### Example Workflow
+#### Example Workflow
 
 **Step 1: Upload Your Data** 📁
 - Count matrix (genes × samples)
@@ -137,31 +143,31 @@ Ask the AI questions about your results and get intelligent, context-aware answe
 
 ---
 
-## Real-World Use Cases 🌍
+### Real-World Use Cases 🌍
 
-### 🧪 **Academic Research**
+#### 🧪 **Academic Research**
 - Compare treated vs control samples
 - Identify affected pathways
 - Generate publication-ready figures
 
-### 💊 **Drug Discovery**
+#### 💊 **Drug Discovery**
 - Screen compound effects on gene expression
 - Identify potential drug targets
 - Understand mechanism of action
 
-### 🎓 **Education**
+#### 🎓 **Education**
 - Teach RNA-seq analysis concepts
 - Hands-on learning without coding barriers
 - Immediate visual feedback
 
-### 🏥 **Clinical Research**
+#### 🏥 **Clinical Research**
 - Analyze patient samples
 - Identify disease signatures
 - Privacy-preserving local analysis
 
 ---
 
-## Technical Highlights 🔧
+### Technical Highlights 🔧
 
 - **Built with**: Python, Gradio, Ollama, DESeq2, PyDESeq2, RNAseqQC
 - **Architecture**: ReAct agent framework with tool selection
@@ -171,7 +177,7 @@ Ask the AI questions about your results and get intelligent, context-aware answe
 
 ---
 
-## What's Next? 🔮
+### What's Next? 🔮
 
 I'm actively developing new features:
 - 📦 Docker container for easier deployment
@@ -184,7 +190,7 @@ I'm actively developing new features:
 
 ---
 
-## Try It Today! 🎉
+### Try It Today! 🎉
 🔗 **GitHub**: [BulkRNA-Agent](https://github.com/shivaprasad-patil/BulkRNA-Agent)  
 🎥 **Demo Video**: Watch it in action  
 📚 **Documentation**: Complete guides and tutorials included  
@@ -193,7 +199,7 @@ Whether you're a seasoned bioinformatician or just starting with RNA-seq analysi
 
 ---
 
-## Join the Community! 🤝
+### Join the Community! 🤝
 
 Have questions? Found a bug? Want to request a feature?
 

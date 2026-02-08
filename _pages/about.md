@@ -1,97 +1,212 @@
 ---
 permalink: /
-title: "About me"
-excerpt: "About me"
-author_profile: true
-redirect_from: 
+title: "About"
+excerpt: "Associate Director, Bioinformatics & Predictive AI"
+author_profile: false
+classes: home
+redirect_from:
   - /about/
   - /about.html
 ---
 
-Hi, I’m Shivaprasad Patil, Associate Director of Bioinformatics – Predictive AI, with a deep passion for transforming drug discovery and precision medicine through the power of data and AI. With over a decade of experience, I specialize in leveraging clinical and genomics data using advanced machine learning and computational biology techniques.
+<section class="hero">
+  <div class="hero__content">
+    <p class="hero__eyebrow">Shivaprasad Patil</p>
+    <h1 class="hero__title">Associate Director, Bioinformatics &amp; Predictive AI</h1>
+    <p class="hero__summary">
+      Scientist working on AI models for drug discovery using genomics and multi-omics data.
+      I focus on translating biological signals into actionable insights for R&amp;D teams.
+    </p>
+    <div class="hero__cta">
+      <a class="btn btn--primary" href="https://github.com/shivaprasad-patil">GitHub</a>
+      <a class="btn btn--primary" href="https://scholar.google.com/citations?user=-beMhZYAAAAJ&hl=en">Google Scholar</a>
+      <a class="btn btn--primary" href="https://www.linkedin.com/in/shivaprasad-patil/">LinkedIn</a>
+      <a class="btn btn--primary" href="mailto:shivaprasad309319@gmail.com">Email</a>
+      <a class="btn btn--primary" href="/files/Shivaprasad_Patil_CV_2025.pdf">CV (PDF)</a>
+    </div>
+  </div>
+  <div class="hero__panel">
+    <div class="hero__card">
+      <div class="hero__photo">
+        <img src="/files/profilepic.jpg" alt="Shivaprasad Patil portrait">
+      </div>
+      <p class="hero__label">Current Focus</p>
+      <ul class="list-tight">
+        <li>Generative and predictive AI for drug discovery</li>
+        <li>Multi-omics integration across bulk, single-cell, and spatial data</li>
+        <li>Translational biomarkers for patient stratification</li>
+      </ul>
+    </div>
+  </div>
+</section>
 
-My core expertise lies in multi-omics data integration across diverse platforms — including bulk, single-cell, and spatial genomics; imaging modalities like Cell Painting and immunofluorescence; and clinical datasets such as EHRs, disease registries, and IHC. I thrive in collaborative, cross-functional environments, driving biomarker discovery and translational insights that push therapeutics forward through the development pipeline.
+<section class="section">
+  <h2>About</h2>
+  <p>
+    I am an Associate Director of Bioinformatics and Predictive AI at AstraZeneca with over a decade
+    of experience in computational biology and machine learning. I work at the intersection of
+    genomics, data science, and drug development to turn high-dimensional biological data into
+    actionable insights.
+  </p>
+  <ul class="list-tight">
+    <li>Background: PhD in Biostatistics and Biomedicine, Technische Universitat Dresden.</li>
+    <li>Research interests: AI/ML, genomics, multi-omics, translational biomarker discovery.</li>
+    <li>Current focus: robust AI models for target validation and safety.</li>
+  </ul>
+</section>
 
+<section class="section">
+  <h2>Research and Projects</h2>
+  <p>
+    Selected projects that showcase my work on scalable AI systems and multi-omics integration.
+  </p>
+  <div class="card-grid">
+    <article class="card card--project">
+      <img class="card__image" src="/files/MultiOmicsBind_infographic.png" alt="MultiOmicsBind infographic">
+      <h3>MultiOmicsBind</h3>
+      <p>
+        Deep learning framework inspired by ImageBind to align genomics, transcriptomics,
+        proteomics, and metabolomics for integrated insights.
+      </p>
+      <p class="card__meta">Methods: multimodal learning, representation alignment</p>
+      <a class="text-link" href="https://github.com/shivaprasad-patil/MultiOmicsBind">View on GitHub</a>
+    </article>
+    <article class="card card--project">
+      <img class="card__image" src="/files/ScAdver_infographic.png" alt="ScAdver infographic">
+      <h3>ScAdver</h3>
+      <p>
+        Adversarial batch correction for single-cell RNA-seq that preserves biology while
+        removing technical variation across protocols.
+      </p>
+      <p class="card__meta">Methods: adversarial learning, domain adaptation, scRNA-seq</p>
+      <a class="text-link" href="https://github.com/shivaprasad-patil/ScAdver">View on GitHub</a>
+    </article>
+    <article class="card card--project">
+      <img class="card__image" src="/files/BulkRNA_Agent_infographic.png" alt="BulkRNA-Agent infographic">
+      <h3>BulkRNA-Agent</h3>
+      <p>
+        AI-powered transcriptomics analysis with dual LLM reasoning and biomedical models,
+        covering QC through enrichment analysis.
+      </p>
+      <p class="card__meta">Methods: LLMs, RNA-seq, differential expression, enrichment</p>
+      <a class="text-link" href="https://github.com/shivaprasad-patil/BulkRNA-Agent">View on GitHub</a>
+    </article>
+    <article class="card card--project">
+      <img class="card__image" src="/files/OmicsFormer.png" alt="OmicsFormer infographic">
+      <h3>OmicsFormer</h3>
+      <p>
+        Transformer-based framework for multi-omics integration with robust handling of
+        missing modalities, batch effects, and cross-study generalization.
+      </p>
+      <p class="card__meta">Methods: transformers, batch correction, multi-omics</p>
+      <a class="text-link" href="https://github.com/shivaprasad-patil/OmicsFormer">View on GitHub</a>
+    </article>
+  </div>
+  <p class="section__footer">
+    <a class="text-link" href="/projects/">View all projects</a>
+  </p>
+</section>
 
-Featured Projects
-======
+<section class="section">
+  <h2>Publications</h2>
+  <p>Peer-reviewed articles and conference proceedings.</p>
+  <p class="section__footer">
+    <a class="text-link" href="/publications/">Browse publications</a>
+  </p>
+</section>
 
-### [BulkRNA-Agent: AI-Powered Transcriptomics Analysis](https://github.com/shivaprasad-patil/BulkRNA-Agent)
-Open-source AI tool combining dual LLM architecture (reasoning + biomedical models) for intelligent bulk RNA-seq analysis. Features AI-powered design suggestions, interactive visualizations, and 100% local processing for data privacy. Streamlines the entire pipeline from QC to differential expression and enrichment analysis in one intuitive web interface.
+<section class="section">
+  <h2>Skills</h2>
+  <div class="skill-group">
+    <h3>AI and Machine Learning</h3>
+    <div class="tag-list">
+      <span class="tag">Deep learning</span>
+      <span class="tag">Generative models</span>
+      <span class="tag">Representation learning</span>
+      <span class="tag">Model interpretability</span>
+      <span class="tag">Causal inference</span>
+    </div>
+  </div>
+  <div class="skill-group">
+    <h3>Genomics and Bioinformatics</h3>
+    <div class="tag-list">
+      <span class="tag">Bulk RNA-seq</span>
+      <span class="tag">Single-cell omics</span>
+      <span class="tag">Spatial transcriptomics</span>
+      <span class="tag">Proteomics</span>
+      <span class="tag">Multi-omics integration</span>
+    </div>
+  </div>
+  <div class="skill-group">
+    <h3>Programming and Tools</h3>
+    <div class="tag-list">
+      <span class="tag">Python</span>
+      <span class="tag">R</span>
+      <span class="tag">PyTorch</span>
+      <span class="tag">TensorFlow</span>
+      <span class="tag">Nextflow</span>
+      <span class="tag">Docker</span>
+    </div>
+  </div>
+</section>
 
-### [ScAdver: Adversarial Batch Correction for Single-Cell Data](https://github.com/shivaprasad-patil/ScAdver)
-Python package that performs adversarial batch correction for single-cell RNA-seq data, eliminating technical batch effects while preserving biological variation and cell type identity. The framework features a train-once, project-forever paradigm—train on reference data, then rapidly transform unlimited query batches without retraining. For challenging scenarios with large protocol shifts (e.g., 10X → Smart-seq2), advanced domain adaptation via residual adapters enables robust cross-technology integration while maintaining biological fidelity.
+<section class="section">
+  <h2>Experience</h2>
+  <div class="experience">
+    <div class="experience__item">
+      <h3>Associate Director, Predictive AI &amp; Bioinformatics</h3>
+      <p class="muted">10/2024 - Present · AstraZeneca · Barcelona</p>
+      <ul class="list-tight">
+        <li>Developing predictive AI and bioinformatics pipelines to translate omics and imaging data into mechanistic insights.</li>
+        <li>Building multi-omics workflows to refine toxicity predictions and accelerate candidate prioritization.</li>
+        <li>Designing AI models to extract predictive morphology from Cell Painting for safety decisions.</li>
+        <li>Advancing proteomics-driven models to improve compound selection in early discovery.</li>
+      </ul>
+    </div>
+    <div class="experience__item">
+      <h3>Scientific Investigator - Human Genetics &amp; Genomics</h3>
+      <p class="muted">07/2022 - 09/2024 · GSK · Heidelberg</p>
+      <ul class="list-tight">
+        <li>Integrated bulk and single-cell multi-omics to uncover biological mechanisms across programs.</li>
+        <li>Led post-hoc analyses of clinical trial data to inform precision medicine strategies.</li>
+        <li>Developed translational iPSC models for Alzheimer's to connect multi-omics signals with disease progression.</li>
+        <li>Identified molecular subtypes and targets using genomics, transcriptomics, proteomics, and lipidomics.</li>
+      </ul>
+    </div>
+    <div class="experience__item">
+      <h3>Bioinformatician &amp; ML Researcher</h3>
+      <p class="muted">06/2019 - 06/2022 · National Center for Radiation Research in Oncology - University Hospital Dresden</p>
+      <ul class="list-tight">
+        <li>Predicted patient prognosis in head and neck squamous cell carcinoma across 8 cohorts (1500 patients).</li>
+        <li>Applied statistical and machine learning methods to identify biomarkers for personalized radiation oncology.</li>
+        <li>Enabled patient selection for prospective clinical trials with multidisciplinary teams.</li>
+        <li>Delivered 50+ poster and oral presentations and served as a reviewer for Radiotherapy &amp; Oncology.</li>
+      </ul>
+    </div>
+    <div class="experience__item">
+      <h3>Bioinformatics Research Associate</h3>
+      <p class="muted">08/2017 - 09/2018 · Katholieke Universiteit Leuven · Belgium</p>
+      <ul class="list-tight">
+        <li>Built a pipeline for viral metagenomic analysis and assembled a catalog of 3000 viral genes and proteins.</li>
+        <li>Identified biomarkers for early diagnosis of liver fibrosis in a cohort of 200 patients.</li>
+      </ul>
+    </div>
+    <div class="experience__item">
+      <h3>Bioinformatician</h3>
+      <p class="muted">2015 - 07/2017 · Institute of Genomics &amp; Integrative Biology · New Delhi, India</p>
+      <ul class="list-tight">
+        <li>Discovered and annotated 60,000+ novel circular RNAs across 38 datasets.</li>
+        <li>Collaborated with 280 clinicians and researchers across 60 centers on exome sequencing for rare disease.</li>
+        <li>Advanced variant prioritization and non-coding RNA studies for gene regulation insights.</li>
+      </ul>
+    </div>
+  </div>
+</section>
 
-### [MultiOmicsBind: Deep Learning for Multi-Omics Integration](https://github.com/shivaprasad-patil/MultiOmicsBind)
-Deep learning framework that brings ImageBind's revolutionary binding modality concept to multi-omics data integration. Enables seamless integration of genomics, transcriptomics, proteomics, and metabolomics data for comprehensive biological insights.
-
-[**View all projects →**](/projects/)
-
----
-
-Experience
-======
-
-Associate Director Bioinformatics & Predictive AI: AstraZeneca
-------
-🤖 Implementing new predictive capabilities using AI and bioinformatics to translate omics and imaging data into discoveries of novel mechanisms of action for compounds.
-
-🧬💻 Building in silico pipelines to advance multi-omics technologies (bulk & spatial) for refining toxicity predictions and accelerating candidate drug prioritization.
-
-🧠🖼️ Developing AI models to extract predictive morphological features from Cell Painting, delivering detailed and cost-effective safety insights.
-
-🧪📊 Building proteomics-driven models to gain deep mechanistic insights and improve compound selection in early drug discovery.
-
-
-Scientific Investigator - Computational Biology: GSK
-------
-🔬 Analyzing and Integrating Multi-Omics Data: Proficient in the analysis and integration of multi-omics data, including single-cell level analyses, to uncover intricate biological insights.
-
-📊 Clinical Trial Data Expertise: Experienced in conducting post-hoc analyses of data from clinical trials, driving the exploration of new precision medicine approaches and facilitating biological discoveries.
-
-🧠 Translational iPSC Model for Alzheimer’s Disease: Unraveling the Molecular Maze.
- - Multi-omics data—genomics, transcriptomics, proteomics, phospho-proteomics, lipidomics, —harmonize to reveal the genetic and molecular symphony of Alzheimer’s. 🎵🔍
- - Target Identification: Seeking the elusive targets—the molecular keys that unlock Alzheimer’s mysteries. By integrating multi-omics data, to pinpoint molecular subtypes, predict disease progression, and tailor personalized treatments. 🎯💡
-
-
-🧬 Genomics Data Analysis: Adept at harnessing genomics data for reverse translation, enabling patient stratification, and guiding targeted therapies.
-
-🚀 Translational Signature Development: Skilled in identifying and developing translational signatures that enhance indication expansion and model translatability, fostering advancements in drug development.
-
-Bioinformatician / ML Research Scientist: OncoRay - Center for Radiation Research in Oncology
-------
-🔬 Collaborated with multicenter, multidisciplinary teams to predict patient prognosis in Head and Neck Squamous Cell Carcinoma, spanning 8 cohorts and involving 1500 patients.
-
-📊 Applied advanced statistical and machine learning techniques to genomics and clinical data, leading to the identification of three groundbreaking biomarkers for personalized radiation oncology.
-
-🎯 Leveraged biomarkers to facilitate patient selection for enhanced individualized treatment options in prospective clinical trials, partnering with over 30 clinicians and experimental scientists.
-
-🎙️ Delivered more than 50 poster and oral presentations, sharing insights and discoveries with the scientific community.
-
-📚 Contributed as a reviewer to the esteemed "Radiotherapy & Oncology" journal, fostering knowledge exchange and scientific advancement.
-
-<br/><img src='/files/Biomarker_Pitch.png'>
-
-Bioinformatician
-------
-🧬 Pioneered the creation of an innovative pipeline for the analysis of viral metagenomic data, pushing the boundaries of bioinformatics.
-
-🔍 Assembled an extensive catalog of 3000 viral genes and proteins, contributing to the advancement of viral genomics research.
-
-🏥 Successfully identified critical biomarkers for the early diagnosis of liver fibrosis in a cohort of 200 patients, facilitating early intervention and patient care.
-
-
-Bioinformatician
-------
-🌀 Discovered and annotated an impressive portfolio of over 60,000 novel Circular RNAs, unraveling new dimensions of genomic research.
-
-🤝 Collaborated extensively with a network of 280 clinicians and researchers spanning over 60 medical and research centers, leveraging Exome-Sequencing for an in-depth exploration of Rare Genetic Diseases through variant prioritization and calling.
-
-🧬 Explored the intricate role of Non-coding RNAs in gene regulation, drawing insights from a diverse array of 38 datasets, contributing to our understanding of genomic complexity.
-<br/><img src='/files/Exome_seq.jpeg'>
-
-Education
-======
-Doctor of Philosophy - PhD, Biostatistics and Biomedicine: Technische Universität Dresden, Germany, 2019-2022.
-
-Integrated BS-­MS in Life ­Sciences: Indian Institute of Science Education and Research Mohali, India 2010-2015.
+<section class="section">
+  <h2>Education</h2>
+  <ul class="list-tight">
+    <li>PhD, Biostatistics and Biomedicine - Technische Universitat Dresden (2019-2022)</li>
+    <li>Integrated BS-MS, Life Sciences - IISER Mohali (2010-2015)</li>
+  </ul>
+</section>

@@ -1,15 +1,16 @@
 ---
 title: "OmicsFormer: Transforming Multi-Omics Data Integration with Deep Learning."
 collection: projects
+infographic_url: '/files/OmicsFormer.png'
+slides_url: '/files/OmicsFormer.pdf'
 
 date: 2025-11-14
 github: "https://github.com/shivaprasad-patil/OmicsFormer"
 ---
 
----
 OmicsFormer is an open-source PyTorch framework that uses transformer architectures to integrate multi-omics data from multiple studies, handling missing modalities and batch effects. Validated on real-world SLE data achieving 91% accuracy across 8 independent studies.
 
-## The Multi-Omics Integration Challenge
+### The Multi-Omics Integration Challenge
 
 Modern biomedical research generates massive amounts of omics data - genomics, transcriptomics, proteomics, and metabolomics. Each modality provides a unique view of biological systems, but the real insights come from integrating these views together.
 
@@ -25,13 +26,13 @@ Traditional approaches like simple concatenation or PCA-based methods struggle w
 
 ---
 
-## Enter OmicsFormer: Transformers for Omics Integration
+### Enter OmicsFormer: Transformers for Omics Integration
 
 I developed OmicsFormer to address these challenges using modern deep learning. The framework leverages **transformer architectures** - the same technology powering ChatGPT - adapted specifically for multi-omics data.
 
 ![OmicsFormer](/files/omicsformer_figure.png)
 
-### Core Architecture
+#### Core Architecture
 
 ```
 Multi-Omics Data → Batch Correction → Transformer Encoder → Classification/Prediction
@@ -48,7 +49,7 @@ Multi-Omics Data → Batch Correction → Transformer Encoder → Classification
 4. **Mixture of Experts** - Specialized processing for each modality
 5. **Feature Importance** - Gradient-based biomarker identification
 
-### What Makes It Different?
+#### What Makes It Different?
 
 **1. Multi-Study Integration by Design**
 
@@ -110,18 +111,18 @@ All methods return normalized scores for easy comparison and interpretation.
 
 ---
 
-## Real-World Validation: Systemic Lupus Erythematosus (SLE)
+### Real-World Validation: Systemic Lupus Erythematosus (SLE)
 
 To validate OmicsFormer, I applied it to a challenging multi-study integration problem: identifying biomarkers for Systemic Lupus Erythematosus from 8 independent RNA-seq studies.
 
-### Dataset Characteristics
+#### Dataset Characteristics
 
 - **8 independent studies** from different labs/platforms
 - **550 total samples** (346 SLE, 204 controls)
 - **19,755 protein-coding genes** (filtered to 2,000 most variable)
 - **Significant batch effects** - studies clustered separately in PCA
 
-### Workflow
+#### Workflow
 
 **Step 1: Feature Selection**
 ```python
@@ -152,7 +153,7 @@ trainer = MultiOmicsTrainer(model, train_loader, val_loader, device='cpu')
 history = trainer.fit(num_epochs=100, early_stopping_patience=15)
 ```
 
-### Results
+#### Results
 
 **Classification Performance:**
 - ✅ **Test Accuracy: 90.91%** (100/110 samples correctly classified)
@@ -176,7 +177,7 @@ history = trainer.fit(num_epochs=100, early_stopping_patience=15)
 
 TNFSF13B (BAFF) is a validated SLE therapeutic target, confirming the biological relevance of our findings.
 
-### Visualizations
+#### Visualizations
 
 The framework generates comprehensive visualizations:
 
@@ -189,7 +190,7 @@ The framework generates comprehensive visualizations:
 
 ---
 
-## Installation & Quick Start
+### Installation & Quick Start
 
 **Install from GitHub:**
 ```bash
@@ -242,23 +243,23 @@ analyzer.plot_feature_importance(importance, modality='genomics', top_n=20)
 
 ---
 
-## Use Cases & Applications
+### Use Cases & Applications
 
 OmicsFormer is designed for:
 
-### 🧬 Research Applications
+#### 🧬 Research Applications
 - **Cancer Subtyping** - Integrate genomics + transcriptomics for molecular classification
 - **Biomarker Discovery** - Identify cross-platform validated features
 - **Disease Prediction** - Build robust multi-omics classifiers
 - **Drug Response** - Predict treatment outcomes from baseline omics profiles
 
-### 🏥 Clinical Applications
+#### 🏥 Clinical Applications
 - **Multi-Center Trials** - Combine data from different hospitals/countries
 - **Cross-Platform Integration** - Harmonize microarray + RNA-seq data
 - **Rare Disease Studies** - Pool small cohorts for adequate power
 - **Precision Medicine** - Stratify patients using integrated omics signatures
 
-### 🔬 Specific Disease Areas
+#### 🔬 Specific Disease Areas
 - ✅ Autoimmune diseases (SLE, RA, IBD, MS)
 - ✅ Oncology (breast, lung, colon, leukemia)
 - ✅ Neurodegenerative diseases (Alzheimer's, Parkinson's)
@@ -267,9 +268,9 @@ OmicsFormer is designed for:
 
 ---
 
-## Technical Deep Dive
+### Technical Deep Dive
 
-### Architecture Components
+#### Architecture Components
 
 **1. Grouped Query Attention (GQA)**
 
@@ -306,7 +307,7 @@ self.layer_norms = nn.ModuleDict({
 })
 ```
 
-### Batch Correction Integration
+#### Batch Correction Integration
 
 Two approaches supported:
 
@@ -344,7 +345,7 @@ I recommend Option 1 (ComBat) for strongest batch correction, especially when ba
 
 ---
 
-## Contributing
+### Contributing
 
 OmicsFormer is open-source (Apache 2.0) and welcomes contributions:
 
@@ -365,7 +366,7 @@ pytest tests/  # run test suite
 
 ---
 
-## Citation
+### Citation
 
 If you use OmicsFormer in your research, please cite:
 
@@ -381,7 +382,7 @@ If you use OmicsFormer in your research, please cite:
 
 ---
 
-## Conclusion
+### Conclusion
 
 Multi-omics integration doesn't have to be painful. OmicsFormer provides a modern, flexible framework that handles the messy realities of real-world data while delivering state-of-the-art performance.
 

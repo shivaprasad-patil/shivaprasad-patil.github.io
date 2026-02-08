@@ -1,0 +1,22 @@
+{% include base_path %}
+{% assign pub = include.post %}
+<article class="pub-item">
+  <h3 class="pub-title">
+    {% if pub.paperurl %}
+      <a href="{{ pub.paperurl }}">{{ pub.title }}</a>
+    {% else %}
+      <a href="{{ base_path }}{{ pub.url }}">{{ pub.title }}</a>
+    {% endif %}
+  </h3>
+  <p class="pub-meta">
+    {% if pub.venue %}{{ pub.venue }}{% endif %}
+    {% if pub.date %} · {{ pub.date | date: "%Y" }}{% endif %}
+    {% if pub.doi %} · DOI: {{ pub.doi }}{% endif %}
+  </p>
+  {% if pub.citation %}
+    <p class="pub-citation">{{ pub.citation }}</p>
+  {% endif %}
+  {% if pub.excerpt and pub.excerpt != '' %}
+    <p class="pub-excerpt">{{ pub.excerpt | markdownify | remove: '<p>' | remove: '</p>' }}</p>
+  {% endif %}
+</article>

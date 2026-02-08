@@ -1,15 +1,17 @@
 ---
 title: "OmicsNet: Integrating data from multiple omics modalities to build and analyze feature-level networks."
 collection: projects
+infographic_url: '/files/OmicsNet_infographic.png'
+slides_url: '/files/OmicsNet_Feature_Level_Integration.pdf'
 
 date: 2025-10-31
 github: "https://github.com/shivaprasad-patil/OmicsNet"
-
----
-# Introducing OmicsNet: Multi-Omics Integration Without Sample Overlap
 ---
 
-## The Challenge: Integrating Multi-Omics Data Without Sample Overlap
+## Introducing OmicsNet: Multi-Omics Integration Without Sample Overlap
+---
+
+### The Challenge: Integrating Multi-Omics Data Without Sample Overlap
 
 In the era of big data and systems biology, integrating multiple omics layers—such as transcriptomics, proteomics, metabolomics, and even high-content imaging—has become essential for unraveling complex biological mechanisms. However, a persistent challenge remains: **what if your datasets have no overlapping samples?**
 
@@ -20,7 +22,7 @@ Traditional integration methods typically require at least some shared samples a
 
 ---
 
-## The Solution: OmicsNet
+### The Solution: OmicsNet
 
 To address this gap, I developed **OmicsNet**—a Python package designed to integrate multi-omics data at the **feature level**, even when there is zero sample overlap across modalities.
 
@@ -33,7 +35,7 @@ OmicsNet enables researchers to:
 
 ---
 
-## How Does OmicsNet Work?
+### How Does OmicsNet Work?
 
 ![OmicsNet Workflow](/files/Omicsnet_figure.png)
 
@@ -56,7 +58,7 @@ This approach allows OmicsNet to **integrate data without requiring any shared s
 
 ---
 
-## Key Features
+### Key Features
 
 - **Zero Sample Overlap Required:** Integrate any omics datasets, regardless of sample overlap.
 - **Multi-Modal Support:** Handle transcriptomics, proteomics, metabolomics, cell painting, and custom data types.
@@ -67,7 +69,7 @@ This approach allows OmicsNet to **integrate data without requiring any shared s
 
 ---
 
-## Example Workflow
+### Example Workflow
 
 Here’s a quick example of how you might use OmicsNet in your research:
 
@@ -99,7 +101,7 @@ launch_dashboard(network=network)
 
 ---
 
-## Why OmicsNet?
+### Why OmicsNet?
 
 OmicsNet fills a critical gap for researchers working with multi-omics data from disparate sources. By focusing on **feature-level associations with a common outcome**, it enables integration and discovery even when traditional methods fall short.
 
@@ -107,7 +109,7 @@ Whether you’re studying disease mechanisms, identifying biomarkers, or explori
 
 ---
 
-## Get Started
+### Get Started
 
 OmicsNet is open source and available on GitHub:  
 👉 [https://github.com/shivaprasad-patil/OmicsNet](https://github.com/shivaprasad-patil/OmicsNet)
@@ -128,7 +130,7 @@ pip install -e ".[dev]"
 
 ---
 
-## Join the Community
+### Join the Community
 
 I welcome feedback, questions, and contributions!  
 If you use OmicsNet in your research, please cite the project and share your results.
@@ -139,4 +141,4 @@ Let’s unlock the full potential of multi-omics integration—**even when your 
 
 **#MultiOmics #Bioinformatics #DataIntegration #Python #OmicsNet #SystemsBiology #OpenSource #NetworkBiology**
 
-**📂 GitHub Repository:** [OmicsNet](https://github.com/shivaprasad-patil/OmicsNet)  
+**📂 GitHub Repository:** [OmicsNet](https://github.com/shivaprasad-patil/OmicsNet)

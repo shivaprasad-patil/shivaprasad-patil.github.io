@@ -1,0 +1,15 @@
+{% assign slides = include.post.slides_url %}
+{% assign infographic = include.post.infographic_url %}
+{% if slides or infographic %}
+  <div class="project-assets">
+    <span class="project-assets__label">Slides / Infographic</span>
+    {% if infographic %}
+      <a class="project-assets__thumb" href="{{ infographic }}">
+        <img src="{{ infographic }}" alt="{{ include.post.title }} infographic">
+      </a>
+    {% endif %}
+    {% if slides %}
+      <a class="text-link" href="{{ slides }}">Slides (PDF)</a>
+    {% endif %}
+  </div>
+{% endif %}

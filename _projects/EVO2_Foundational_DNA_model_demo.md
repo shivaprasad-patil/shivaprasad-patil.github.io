@@ -7,14 +7,13 @@ github: "https://github.com/shivaprasad-patil/EVO2-Demo"
 paper_link: "https://www.biorxiv.org/content/10.1101/2025.02.18.638918v1.full"
 ---
 
----
-# 🧬 EVO2 DNA FOUNDATIONAL MODEL Demo Summary 🚀
+## 🧬 EVO2 DNA FOUNDATIONAL MODEL Demo Summary 🚀
 
-## 🎯 **What This Notebook Does**
+### 🎯 **What This Notebook Does**
 
 This notebook provides a **complete, working implementation** of a StripedHyena-based neural network architecture specifically designed for DNA sequence modeling. It demonstrates the entire pipeline from model architecture design to successful training with real loss curves.
 
-### 🔬 **Core Functionality**
+#### 🔬 **Core Functionality**
 
 1. **🧬 DNA Sequence Processing**
    - Custom `CharLevelTokenizer` for genomic data with special tokens (`<PAD>`, `<UNK>`, `<START>`, `<END>`)
@@ -32,7 +31,7 @@ This notebook provides a **complete, working implementation** of a StripedHyena-
    - `MultiHeadAttention`: Self-attention with rotary position encoding
    - `FeedForward`: Efficient feed-forward networks with SiLU activation
 
-### 🚀 **Key Achievements**
+#### 🚀 **Key Achievements**
 
 #### ✅ **Complete Training Infrastructure**
 - `StripedHyenaTrainer` class with comprehensive training loop
@@ -46,7 +45,7 @@ This notebook provides a **complete, working implementation** of a StripedHyena-
 - No tensor dimension errors or training failures
 - Proper convergence behavior
 
-### 🔧 **Technical Implementation Details**
+#### 🔧 **Technical Implementation Details**
 
 #### **Model Architecture Layers:**
 ```
@@ -85,14 +84,14 @@ DNA Sequence Prediction/Generation
 **The model successfully demonstrates that the StripedHyena architecture can effectively learn from DNA sequence data with proper tensor dimension handling and training procedures.**
 
 
-### 🏗️ Key Components Built:
+#### 🏗️ Key Components Built:
 - 🔧 **StripedHyenaConfig**: Flexible configuration system for model architecture
 - 🧠 **Multi-Scale Convolutions**: Short, Medium & Long-range DNA pattern recognition
 - 🎭 **Character-Level Tokenizer**: IUPAC nucleotide encoding (A, T, G, C, N, etc.)
 - 🏢 **Complete Model Architecture**: Embeddings → Striped Blocks → Output Layers
 - 🎓 **Training Infrastructure**: Full trainer with validation, checkpointing & visualization
 
-### 📊 Performance Achieved:
+#### 📊 Performance Achieved:
 - ✅ **157,056 parameters** - Efficient yet powerful model size
 - 📈 **93.1% loss reduction** over just 2 training epochs
 - 🎯 **Zero tensor dimension errors** - Robust architecture implementation
@@ -104,4 +103,4 @@ This notebook is for:
 
 **📂 GitHub Repository:** [EVO2-Demo](https://github.com/shivaprasad-patil/EVO2-Demo)  
 
-**📄 Related Paper:** [Read the paper](https://www.biorxiv.org/content/10.1101/2025.02.18.638918v1.full)  
+**📄 Related Paper:** [Read the paper](https://www.biorxiv.org/content/10.1101/2025.02.18.638918v1.full)

@@ -6,10 +6,9 @@ date: 2025-08-18
 github: "https://github.com/shivaprasad-patil/DeepSeek-V3-Model-Architecture"
 ---
 
----
-# DeepSeek-V3 Model Architecture: Educational Deep Dive
+## DeepSeek-V3 Model Architecture: Educational Deep Dive
 
-## Overview
+### Overview
 This notebook provides an educational exploration of the DeepSeek-V3 transformer architecture breaking down each component with visualizations and examples using randomly generated data to understand how the model works under the hood.
 
 1. **Model Architecture Overview** - High-level structure
@@ -25,4 +24,4 @@ This notebook is for:
 - 📖 **Educational demonstrations** of DeepSeek-V3 Model Architecture.
 ---
 
-**📂 GitHub Repository:** [DeepSeek-V3-Model-Architecture](https://github.com/shivaprasad-patil/DeepSeek-V3-Model-Architecture)  
+**📂 GitHub Repository:** [DeepSeek-V3-Model-Architecture](https://github.com/shivaprasad-patil/DeepSeek-V3-Model-Architecture)

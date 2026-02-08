@@ -6,8 +6,6 @@ date: 2025-06-29
 github: "https://github.com/shivaprasad-patil/nano_GPT-2"
 ---
 
----
-
 🧠💬 ChatGPT has become an integral part of my daily life. I became increasingly intrigued to understand what was going on *under the hood* of the GPT model and spent my weekends 🛠️ building a GPT model — aiming to replicate OpenAI’s GPT-2 (124M) model.
 
 🎓📚 **Andrej Karpathy’s** lecture series is hands-down the best resource to learn about **Deep Learning** and **LLMs**.

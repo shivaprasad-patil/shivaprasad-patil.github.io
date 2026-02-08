@@ -2,19 +2,21 @@
 title: "ScAdver: Adversarial Batch Correction for Single-Cell Data"
 collection: projects
 excerpt: "Train once, project forever: Adversarial batch correction for single-cell RNA-seq that preserves biology while removing batch effects with fast inference (<1s per query batch)."
+infographic_url: '/files/ScAdver_infographic.png'
+slides_url: '/files/ScAdver.pdf'
 date: 2025-08-30
 github: "https://github.com/shivaprasad-patil/ScAdver"
 header:
   teaser: /images/scadver-thumb.png
 ---
 
-# 🧬 ScAdver — Adversarial Batch Correction for Single-Cell Data
+## 🧬 ScAdver — Adversarial Batch Correction for Single-Cell Data
 
 ScAdver performs adversarial batch correction for single-cell RNA-seq data, eliminating technical batch effects while preserving biological variation and cell type identity. The framework features a train-once, project-forever paradigm—train on reference data, then rapidly transform unlimited query batches without retraining. For challenging scenarios with large protocol shifts (e.g., 10X → Smart-seq2), advanced domain adaptation via residual adapters enables robust cross-technology integration while maintaining biological fidelity.
 
 ![🔧 Architecture](/files/ScAdver_workflow.png)
 
-## Key Features
+### Key Features
 
 - ✅ **Train once, project forever**: Save trained model and process unlimited query batches
 - ⚡ **Fast inference**: No retraining required
@@ -22,15 +24,15 @@ ScAdver performs adversarial batch correction for single-cell RNA-seq data, elim
 - 🔄 **Batch-free**: Technical variation and protocol effects removed
 - 🖥️ **Multi-device**: Supports CPU, CUDA, and Apple Silicon (MPS)
 
-## Installation
+### Installation
 
 ```bash
 pip install git+https://github.com/shivaprasad-patil/ScAdver.git
 ```
 
-## Quick Start
+### Quick Start
 
-### Basic Usage
+#### Basic Usage
 
 ```python
 import scanpy as sc
@@ -53,7 +55,7 @@ sc.tl.umap(adata_corrected)
 sc.pl.umap(adata_corrected, color=['celltype', 'batch'])
 ```
 
-### Query Processing
+#### Query Processing
 
 ScAdver uses a unified projection approach with optional residual adapters:
 
@@ -110,11 +112,11 @@ sc.tl.umap(adata_all)
 
 **Key Insight**: When `adapter_dim>0` but query is similar to reference, the adapter automatically learns to stay close to zero, making it equivalent to fast mode. This makes the framework robust and adaptive to the data's needs.
 
-## Usage Workflows
+### Usage Workflows
 
 ScAdver offers **two flexible workflows** depending on your use case:
 
-### Workflow 1: All-in-One (Process Everything Together)
+#### Workflow 1: All-in-One (Process Everything Together)
 
 Train and correct all data in a single call. The model trains only on reference data but corrects both reference and query:
 
@@ -144,7 +146,7 @@ adata_corrected, model, metrics = adversarial_batch_correction(
 
 **Example**: See [examples/pancreas_example.py](examples/pancreas_example.py)
 
-### Workflow 2: Train-Then-Project (Reusable Model)
+#### Workflow 2: Train-Then-Project (Reusable Model)
 
 Train once on reference, then project unlimited query batches as they arrive:
 
@@ -185,7 +187,7 @@ adata_query4 = transform_query_adaptive(
 
 **Example**: See [examples/query_projection_notebook.ipynb](examples/query_projection_notebook.ipynb)
 
-### Which Workflow to Choose?
+#### Which Workflow to Choose?
 
 | Scenario | Recommended Workflow |
 |----------|---------------------|
@@ -195,7 +197,7 @@ adata_query4 = transform_query_adaptive(
 | Deploying as a service | **Workflow 2** (Train-Then-Project) |
 | Interactive analysis, have all data | **Workflow 1** (All-in-One) |
 
-## How It Works
+### How It Works
 
 The encoder learns to:
 - ✅ Keep biological patterns (via bio-classifier)
@@ -203,13 +205,13 @@ The encoder learns to:
 
 Once trained, the frozen encoder automatically applies this transformation to new data—no ining needed.
 
-## Output
+### Output
 
 - **Latent embeddings**: `adata.obsm['X_ScAdver']` (256-dimensional, batch-corrected)
 - **Reconstructed expression**: `adata.layers['ScAdver_reconstructed']` (optional, use `return_reconstructed=True`)
 - **Metrics**: Biology preservation, batch correction, overall score
 
-## Documentation
+### Documentation
 
 - **[ENCODER_MECHANISM_EXPLAINED.md](ENCODER_MECHANISM_EXPLAINED.md)** - How the encoder training and projection works
 - **[RESIDUAL_ADAPTER.md](RESIDUAL_ADAPTER.md)** - Residual adapters for domain adaptation
@@ -217,4 +219,4 @@ Once trained, the frozen encoder automatically applies this transformation to ne
 
 ---
 
-**📂 GitHub Repository:** [ScAdver](https://github.com/shivaprasad-patil/ScAdver)  
+**📂 GitHub Repository:** [ScAdver](https://github.com/shivaprasad-patil/ScAdver)
