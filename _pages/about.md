@@ -22,7 +22,7 @@ redirect_from:
       <a class="btn btn--primary" href="https://scholar.google.com/citations?user=-beMhZYAAAAJ&hl=en">Google Scholar</a>
       <a class="btn btn--primary" href="https://www.linkedin.com/in/shivaprasad-patil/">LinkedIn</a>
       <a class="btn btn--primary" href="mailto:shivaprasad309319@gmail.com">Email</a>
-      <a class="btn btn--primary" href="/files/Shivaprasad_Patil_CV_2025.pdf">CV (PDF)</a>
+      <a class="btn btn--primary" href="mailto:shivaprasad309319@gmail.com?subject=CV%20Request&body=Hi%20Shivaprasad%2C%0A%0AI%20would%20like%20to%20request%20your%20CV.%0A%0AName%3A%0AOrganization%3A%0AReason%20for%20request%3A%0A%0AThanks%2C">Request CV</a>
     </div>
   </div>
   <div class="hero__panel">
@@ -168,9 +168,9 @@ redirect_from:
       <p class="muted">07/2022 - 09/2024 · GSK · Heidelberg</p>
       <ul class="list-tight">
         <li>Integrated bulk and single-cell multi-omics to uncover biological mechanisms across programs.</li>
-        <li>Led post-hoc analyses of clinical trial data to inform precision medicine strategies.</li>
-        <li>Developed translational iPSC models for Alzheimer's to connect multi-omics signals with disease progression.</li>
-        <li>Identified molecular subtypes and targets using genomics, transcriptomics, proteomics, and lipidomics.</li>
+        <li>Performed post-hoc analyses of clinical trial data to inform precision medicine strategies.</li>
+        <li>Built translational modeling frameworks linking iPSC-derived Alzheimer’s models with multi-omics data to characterize disease progression.</li>
+        <li>Identified molecular subtypes and translational signatures that enabled indication expansion.</li>
       </ul>
     </div>
     <div class="experience__item">
@@ -195,8 +195,8 @@ redirect_from:
       <h3>Bioinformatician</h3>
       <p class="muted">2015 - 07/2017 · Institute of Genomics &amp; Integrative Biology · New Delhi, India</p>
       <ul class="list-tight">
-        <li>Discovered and annotated 60,000+ novel circular RNAs across 38 datasets.</li>
-        <li>Collaborated with 280 clinicians and researchers across 60 centers on exome sequencing for rare disease.</li>
+        <li>Identified and annotated 60,000+ novel circular RNAs across 38 datasets.</li>
+        <li>Part of a multi-center collaborative project with 280 clinicians and researchers across 60 centers, advancing exome sequencing for rare disease.</li>
         <li>Advanced variant prioritization and non-coding RNA studies for gene regulation insights.</li>
       </ul>
     </div>
