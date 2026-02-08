@@ -11,8 +11,8 @@ redirect_from:
 
 <section class="hero">
   <div class="hero__content">
-    <p class="hero__eyebrow">Shivaprasad Patil</p>
-    <h1 class="hero__title">Associate Director, Bioinformatics &amp; Predictive AI</h1>
+    <h1 class="hero__title">Shivaprasad Patil, PhD</h1>
+    <p class="hero__role">Associate Director, Bioinformatics &amp; Predictive AI</p>
     <p class="hero__summary">
       Scientist working on AI models for drug discovery using genomics and multi-omics data.
       I focus on translating biological signals into actionable insights for R&amp;D teams.
@@ -28,16 +28,19 @@ redirect_from:
   <div class="hero__panel">
     <div class="hero__card">
       <div class="hero__photo">
-        <img src="/files/profilepic.jpg" alt="Shivaprasad Patil portrait">
+        <img src="/files/Shiva_professional.png" alt="Shivaprasad Patil portrait">
       </div>
-      <p class="hero__label">Current Focus</p>
-      <ul class="list-tight">
-        <li>Generative and predictive AI for drug discovery</li>
-        <li>Multi-omics integration across bulk, single-cell, and spatial data</li>
-        <li>Translational biomarkers for patient stratification</li>
-      </ul>
     </div>
   </div>
+</section>
+
+<section class="hero-focus">
+  <p class="hero__label">Current Focus</p>
+  <ul class="hero-focus__list">
+    <li>Generative and predictive AI for drug discovery</li>
+    <li>Multi-omics integration across bulk, single-cell, and spatial data</li>
+    <li>Translational biomarkers for patient stratification</li>
+  </ul>
 </section>
 
 <section class="section">
