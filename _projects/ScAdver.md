@@ -105,10 +105,10 @@ For query projection, `transform_query_adaptive` measures latent shift and route
 
 ### Documentation
 
-- **[ENCODER_MECHANISM_EXPLAINED.md](ENCODER_MECHANISM_EXPLAINED.md)** - Encoder training and projection mechanics.
-- **[RESIDUAL_ADAPTER.md](RESIDUAL_ADAPTER.md)** - Residual adapter and adaptation details.
-- **[Pancreas notebook](examples/ScAdver_pancreas_batch_correction.ipynb)** - End-to-end walkthrough.
-- **[PBMC notebook](examples/ScAdver_pbmc_batch_correction.ipynb)** - v2/v3 protocol integration.
+- **[ENCODER_MECHANISM_EXPLAINED.md](https://github.com/shivaprasad-patil/ScAdver/blob/main/ENCODER_MECHANISM_EXPLAINED.md)** - Encoder training and projection mechanics.
+- **[RESIDUAL_ADAPTER.md](https://github.com/shivaprasad-patil/ScAdver/blob/main/RESIDUAL_ADAPTER.md)** - Residual adapter and adaptation details.
+- **[Pancreas notebook](https://github.com/shivaprasad-patil/ScAdver/blob/main/examples/ScAdver_pancreas_batch_correction.ipynb)** - End-to-end walkthrough.
+- **[PBMC notebook](https://github.com/shivaprasad-patil/ScAdver/blob/main/examples/ScAdver_pbmc_batch_correction.ipynb)** - v2/v3 protocol integration.
 
 ---
 
