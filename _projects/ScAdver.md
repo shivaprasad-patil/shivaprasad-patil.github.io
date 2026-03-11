@@ -1,28 +1,31 @@
 ---
 title: "ScAdver: Adversarial Batch Correction for Single-Cell Data"
 collection: projects
-excerpt: "Train once, project forever: Adversarial batch correction for single-cell RNA-seq that preserves biology while removing batch effects with fast inference (<1s per query batch)."
+excerpt: "Train once, project forever batch correction for single-cell RNA-seq with probe-gated adaptive query projection and robust domain adaptation."
 infographic_url: '/files/ScAdver_infographic.png'
 slides_url: '/files/ScAdver.pdf'
-date: 2025-08-30
+date: 2026-03-11
 github: "https://github.com/shivaprasad-patil/ScAdver"
 header:
   teaser: /images/scadver-thumb.png
 ---
 
-## 🧬 ScAdver — Adversarial Batch Correction for Single-Cell Data
+## ScAdver - Adversarial Batch Correction for Single-Cell Data
 
-ScAdver performs adversarial batch correction for single-cell RNA-seq data, eliminating technical batch effects while preserving biological variation and cell type identity. The framework features a train-once, project-forever paradigm—train on reference data, then rapidly transform unlimited query batches without retraining. For challenging scenarios with large protocol shifts (e.g., 10X → Smart-seq2), advanced domain adaptation via residual adapters enables robust cross-technology integration while maintaining biological fidelity.
+ScAdver removes technical batch effects from single-cell RNA-seq data while preserving biological signal and cell identity. It follows a **train-once, project-forever** paradigm: train on reference data once, then project unlimited query batches without retraining the core encoder.
 
-![🔧 Architecture](/files/ScAdver_workflow.png)
+![Architecture](/files/ScAdver_workflow.png)
 
 ### Key Features
 
-- ✅ **Train once, project forever**: Save trained model and process unlimited query batches
-- ⚡ **Fast inference**: No retraining required
-- 🎯 **Biology preserved**: Cell types and biological variation maintained
-- 🔄 **Batch-free**: Technical variation and protocol effects removed
-- 🖥️ **Multi-device**: Supports CPU, CUDA, and Apple Silicon (MPS)
+- **Train once, project forever**: Reuse a trained encoder across many query batches.
+- **Fully reproducible**: `seed=42` triggers internal global seeding in training functions.
+- **Biology preserved**: Adversarial training keeps biological structure while removing technical variation.
+- **Enhanced residual adapter**: 3-layer adapter with LayerNorm and GELU for robust domain shifts.
+- **Distribution alignment**: MMD + Moment-Matching + CORAL losses for stable adaptation.
+- **Probe-gated query projection**: Automatic routing in `transform_query_adaptive` based on measured latent shift and overlap.
+- **Fast large-scale mode**: Analytical path supports 100k+ cells efficiently.
+- **Multi-device**: CPU, CUDA, and Apple Silicon (MPS).
 
 ### Installation
 
@@ -30,193 +33,83 @@ ScAdver performs adversarial batch correction for single-cell RNA-seq data, elim
 pip install git+https://github.com/shivaprasad-patil/ScAdver.git
 ```
 
-### Quick Start
+### Workflows
 
-#### Basic Usage
+#### Workflow 1: All-in-One Batch Correction
 
 ```python
-import scanpy as sc
 from scadver import adversarial_batch_correction
 
-# Load data
-adata = sc.read("your_data.h5ad")
-
-# Run batch correction
 adata_corrected, model, metrics = adversarial_batch_correction(
     adata=adata,
     bio_label='celltype',
     batch_label='batch',
-    epochs=500
+    epochs=500,
+    seed=42,
+    return_reconstructed=True
 )
-
-# Visualize
-sc.pp.neighbors(adata_corrected, use_rep='X_ScAdver')
-sc.tl.umap(adata_corrected)
-sc.pl.umap(adata_corrected, color=['celltype', 'batch'])
 ```
 
-#### Query Processing
+Use this when all data is already available and you want one-time correction.
 
-ScAdver uses a unified projection approach with optional residual adapters:
+#### Workflow 2: Reference-to-Query (Train-Then-Project)
 
 ```python
-import torch
 from scadver import adversarial_batch_correction, transform_query_adaptive
 
-# Step 1: Train on reference (once)
+# Step 1: train once on reference
 adata_ref_corrected, model, metrics = adversarial_batch_correction(
     adata=adata_reference,
     bio_label='celltype',
     batch_label='tech',
-    epochs=500
+    epochs=500,
+    seed=42
 )
 
-# Step 2: Save model
-torch.save(model.state_dict(), 'scadver_model.pt')
-
-# Step 3a: Fast projection (adapter_dim=0)
-adata_query1 = transform_query_adaptive(model, adata_query_batch1)
-adata_query2 = transform_query_adaptive(model, adata_query_batch2)
-# ... unlimited batches
-
-# Step 3b: Adaptive projection (for domain shifts, adapter_dim>0)
-adata_query_adapted = transform_query_adaptive(
+# Step 2: project query batches as they arrive
+adata_query = transform_query_adaptive(
     model=model,
     adata_query=adata_query,
-    adata_reference=adata_reference[:500],  # Small reference sample
-    bio_label='celltype',  # Optional: enables supervised adaptation
-    adapter_dim=128,  # Enable residual adapter
-    adaptation_epochs=50
-)
-
-# Step 4: Combine and analyze
-adata_all = sc.concat([adata_ref_corrected, adata_query1, adata_query2])
-sc.pp.neighbors(adata_all, use_rep='X_ScAdver')
-sc.tl.umap(adata_all)
-```
-
-**Unified Approach with Residual Adapters**:
-
-**Fast Mode (adapter_dim=0, default)**:
-- ⚡ Direct projection through frozen encoder
-- ✅ No adaptation needed: adapter mathematically reduces to zero
-- ✅ Perfect for similar protocols/technologies
-- ✅ Scales to unlimited query batches
-
-**Adaptive Mode (adapter_dim>0)**:
-- 🔬 Residual adapter handles domain shifts
-- ✅ Better for protocol differences (e.g., 10X → Smart-seq2)
-- ✅ Optional biological supervision for improved alignment
-- ⚠️ Slower: trains small adapter network (~50 epochs)
-- ✅ Adapter learns to be near-zero if no adaptation needed
-
-**Key Insight**: When `adapter_dim>0` but query is similar to reference, the adapter automatically learns to stay close to zero, making it equivalent to fast mode. This makes the framework robust and adaptive to the data's needs.
-
-### Usage Workflows
-
-ScAdver offers **two flexible workflows** depending on your use case:
-
-#### Workflow 1: All-in-One (Process Everything Together)
-
-Train and correct all data in a single call. The model trains only on reference data but corrects both reference and query:
-
-```python
-import numpy as np
-from scadver import adversarial_batch_correction
-
-# Mark which samples are Reference vs Query
-query_mask = np.array([tech in ["smartseq2", "celseq2"] for tech in adata.obs["tech"]])
-adata.obs['Source'] = np.where(query_mask, "Query", "Reference")
-
-# Train on Reference, correct both Reference and Query
-adata_corrected, model, metrics = adversarial_batch_correction(
-    adata=adata,  # All data
-    bio_label='celltype',
-    batch_label='tech',
-    reference_data='Reference',  # Model trains ONLY on these samples
-    query_data='Query',          # Corrected but doesn't influence training
-    epochs=500
+    adata_reference=adata_reference,
+    bio_label='celltype'
 )
 ```
 
-**✅ Use when:**
-- You have all data available upfront
-- One-time batch correction workflow
-- Want to process everything in a single step
-
-**Example**: See [examples/pancreas_example.py](examples/pancreas_example.py)
-
-#### Workflow 2: Train-Then-Project (Reusable Model)
-
-Train once on reference, then project unlimited query batches as they arrive:
-
-```python
-import torch
-from scadver import adversarial_batch_correction, transform_query_adaptive
-
-# Step 1: Train on reference (once)
-adata_ref_corrected, model, metrics = adversarial_batch_correction(
-    adata=adata_reference,
-    bio_label='celltype',
-    batch_label='tech',
-    epochs=500
-)
-
-# Step 2: Save model for reuse
-torch.save(model.state_dict(), 'scadver_model.pt')
-
-# Step 3: Project queries as they arrive (unlimited batches!)
-# Fast mode (< 1 second per batch)
-adata_query1 = transform_query_adaptive(model, query_batch1)
-adata_query2 = transform_query_adaptive(model, query_batch2)
-adata_query3 = transform_query_adaptive(model, query_batch3)
-
-# Adaptive mode (for domain shifts)
-adata_query4 = transform_query_adaptive(
-    model, query_batch4,
-    adata_reference=adata_ref[:500],
-    adapter_dim=128,
-    adaptation_epochs=50
-)
-```
-
-**✅ Use when:**
-- Query batches arrive over time (streaming data)
-- Want to reuse the same model for many queries
-- Deploying model as a service
-
-**Example**: See [examples/query_projection_notebook.ipynb](examples/query_projection_notebook.ipynb)
+Use this when query data arrives over time, comes from a shifted protocol, or you want a reusable deployed model.
 
 #### Which Workflow to Choose?
 
 | Scenario | Recommended Workflow |
-|----------|---------------------|
-| All data available now, one-time analysis | **Workflow 1** (All-in-One) |
-| Query batches arrive over time | **Workflow 2** (Train-Then-Project) |
-| Need to process 100+ query batches | **Workflow 2** (Train-Then-Project) |
-| Deploying as a service | **Workflow 2** (Train-Then-Project) |
-| Interactive analysis, have all data | **Workflow 1** (All-in-One) |
+|----------|----------------------|
+| All data available now, one-time analysis | **Workflow 1** |
+| Query batches arrive over time | **Workflow 2** |
+| Large protocol shift (e.g., 10X to Smart-seq2) | **Workflow 2** |
+| Deploying as a reusable service | **Workflow 2** |
 
 ### How It Works
 
-The encoder learns to:
-- ✅ Keep biological patterns (via bio-classifier)
-- ❌ Remove batch patterns (via adversarial discriminator)
+The encoder is trained adversarially to:
+- Keep biological patterns via a bio-classifier.
+- Remove batch patterns via an adversarial discriminator.
 
-Once trained, the frozen encoder automatically applies this transformation to new data—no ining needed.
+For query projection, `transform_query_adaptive` measures latent shift and routes to one of three paths:
+- **Neighborhood residual path** for strong overlap and moderate class count.
+- **Neural adapter path** for moderate-to-large biological diversity (up to 100 classes).
+- **Analytical mean-shift path** for very large class spaces (100+ classes).
 
 ### Output
 
-- **Latent embeddings**: `adata.obsm['X_ScAdver']` (256-dimensional, batch-corrected)
-- **Reconstructed expression**: `adata.layers['ScAdver_reconstructed']` (optional, use `return_reconstructed=True`)
-- **Metrics**: Biology preservation, batch correction, overall score
+- **Latent embeddings**: `adata.obsm['X_ScAdver']` (256-dimensional, batch-corrected).
+- **Reconstructed expression**: `adata.layers['ScAdver_reconstructed']` (optional, set `return_reconstructed=True`).
+- **Metrics**: Biology preservation, batch correction, overall score.
 
 ### Documentation
 
-- **[ENCODER_MECHANISM_EXPLAINED.md](ENCODER_MECHANISM_EXPLAINED.md)** - How the encoder training and projection works
-- **[RESIDUAL_ADAPTER.md](RESIDUAL_ADAPTER.md)** - Residual adapters for domain adaptation
-- **[Query Projection Notebook](examples/query_projection_notebook.ipynb)** - Fast vs adaptive comparison
+- **[ENCODER_MECHANISM_EXPLAINED.md](ENCODER_MECHANISM_EXPLAINED.md)** - Encoder training and projection mechanics.
+- **[RESIDUAL_ADAPTER.md](RESIDUAL_ADAPTER.md)** - Residual adapter and adaptation details.
+- **[Pancreas notebook](examples/ScAdver_pancreas_batch_correction.ipynb)** - End-to-end walkthrough.
+- **[PBMC notebook](examples/ScAdver_pbmc_batch_correction.ipynb)** - v2/v3 protocol integration.
 
 ---
 
-**📂 GitHub Repository:** [ScAdver](https://github.com/shivaprasad-patil/ScAdver)
+**GitHub Repository:** [ScAdver](https://github.com/shivaprasad-patil/ScAdver)
