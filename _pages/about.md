@@ -75,7 +75,7 @@ redirect_from:
       <a class="text-link" href="https://github.com/shivaprasad-patil/MultiOmicsBind">View on GitHub</a>
     </article>
     <article class="card card--project">
-      <img class="card__image" src="/files/Scadver_infographic.png" alt="ScAdver infographic">
+      <img class="card__image" src="/files/ScAdver_infographic.png" alt="ScAdver infographic">
       <h3>ScAdver</h3>
       <p>
         Adversarial batch correction for single-cell RNA-seq that preserves biology while

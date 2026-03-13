@@ -2,7 +2,7 @@
 title: "ScAdver: Adversarial Batch Correction for Single-Cell Data"
 collection: projects
 excerpt: "Train once, project forever batch correction for single-cell RNA-seq with probe-gated adaptive query projection and robust domain adaptation."
-infographic_url: '/files/Scadver_infographic.png'
+infographic_url: '/files/ScAdver_infographic.png'
 slides_url: '/files/ScAdver.pdf'
 date: 2026-03-11
 github: "https://github.com/shivaprasad-patil/ScAdver"
