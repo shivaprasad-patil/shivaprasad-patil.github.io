@@ -28,7 +28,7 @@ redirect_from:
   <div class="hero__panel">
     <div class="hero__card">
       <div class="hero__photo">
-        <img src="/files/Shiva_professional.JPG" alt="Shivaprasad Patil portrait">
+        <img src="/files/Shiva_headshot.png" alt="Shivaprasad Patil portrait">
       </div>
     </div>
   </div>
