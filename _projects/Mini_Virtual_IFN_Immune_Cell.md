@@ -2,7 +2,8 @@
 title: "Mini Virtual IFN Immune Cell"
 collection: projects
 excerpt: "A perturbation-aware single-cell virtual cell prototype that learns interferon and COVID immune-state transitions and exposes a simple inference API."
-infographic_url: '/files/virtual_ifn_cell_v1.png'
+infographic_url: '/files/virtual_ifn_cell_infographic.png'
+slides_url: '/files/Virtual_IFN_Cell.pdf'
 date: 2026-05-02
 ---
 

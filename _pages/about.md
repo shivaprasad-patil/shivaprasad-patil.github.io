@@ -65,6 +65,16 @@ redirect_from:
   </p>
   <div class="card-grid">
     <article class="card card--project">
+      <img class="card__image" src="/files/virtual_ifn_cell_infographic.png" alt="Mini Virtual IFN Immune Cell infographic">
+      <h3>Mini Virtual IFN Immune Cell</h3>
+      <p>
+        Perturbation-aware single-cell virtual cell prototype for modeling interferon and
+        COVID immune-state transitions with a lightweight inference API.
+      </p>
+      <p class="card__meta">Methods: single-cell modeling, perturbation learning, immune-state prediction</p>
+      <a class="text-link" href="https://github.com/shivaprasad-patil/virtual-ifn-cell">View on GitHub</a>
+    </article>
+    <article class="card card--project">
       <img class="card__image" src="/files/MultiOmicsBind_infographic.png" alt="MultiOmicsBind infographic">
       <h3>MultiOmicsBind</h3>
       <p>
@@ -93,16 +103,6 @@ redirect_from:
       </p>
       <p class="card__meta">Methods: LLMs, RNA-seq, differential expression, enrichment</p>
       <a class="text-link" href="https://github.com/shivaprasad-patil/BulkRNA-Agent">View on GitHub</a>
-    </article>
-    <article class="card card--project">
-      <img class="card__image" src="/files/OmicsFormer.png" alt="OmicsFormer infographic">
-      <h3>OmicsFormer</h3>
-      <p>
-        Transformer-based framework for multi-omics integration with robust handling of
-        missing modalities, batch effects, and cross-study generalization.
-      </p>
-      <p class="card__meta">Methods: transformers, batch correction, multi-omics</p>
-      <a class="text-link" href="https://github.com/shivaprasad-patil/OmicsFormer">View on GitHub</a>
     </article>
   </div>
   <p class="section__footer">
