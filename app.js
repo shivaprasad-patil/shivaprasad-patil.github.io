@@ -1,5 +1,18 @@
 const projects = [
   {
+    id: "oncokg-rag",
+    selected: true,
+    date: "August 2026",
+    title: "OncoKG-RAG",
+    category: "Biomedical AI",
+    image: "/files/OncoRAG_infographic.png",
+    summary: "A real-data biomedical knowledge graph with template retrieval, local LLM synthesis, literature evidence, and graph analytics for drug discovery exploration.",
+    methods: ["knowledge graphs", "KG-RAG", "Neo4j", "local LLMs"],
+    github: "https://github.com/shivaprasad-patil/OncoKG-RAG",
+    slides: "/files/OncoKG-RAG_Biomedical_Discovery_slides.pdf",
+    impact: "Connects traceable molecular, pathway, drug-target, patient, and literature evidence in a reproducible system where the LLM summarizes retrieved graph results rather than generating database queries."
+  },
+  {
     id: "virtual-ifn-cell",
     selected: true,
     date: "May 2026",
@@ -141,6 +154,14 @@ const projects = [
 ];
 
 const projectPosts = {
+  "oncokg-rag": {
+    overview: "OncoKG-RAG is an open-source biomedical discovery architecture built around a focused 15-gene breast cancer panel. It integrates real public evidence from GDC/TCGA-BRCA, Reactome, STRING, DGIdb, and PubMed into Neo4j, exposes reviewed template queries through FastAPI, and uses a local Ollama model only to synthesize answers from retrieved graph rows. The result is an inspectable KG-RAG workflow with explicit provenance, caveats, and separation between observed, derived, literature, and model-ranked evidence.",
+    highlights: [
+      "Builds a reproducible Neo4j knowledge graph from real clinical, mutation, expression, pathway, protein-interaction, drug-target, and literature records.",
+      "Provides fixed-template retrieval, molecular patient similarity, pathway alteration, drug-coverage analytics, and a Streamlit evidence interface through FastAPI.",
+      "Adds dictionary-based PubMed co-mentions and optional real-data Node2Vec link ranking while keeping local LLM use restricted to answer synthesis."
+    ]
+  },
   "virtual-ifn-cell": {
     overview: "This project explores a compact virtual-cell system for learning how immune-cell states change under interferon stimulation and COVID-related perturbations. The trained model is designed to support repeatable inference rather than remain confined to a research notebook.",
     highlights: [
