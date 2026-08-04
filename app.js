@@ -138,6 +138,7 @@ const projects = [
     date: "July 2025",
     title: "LLMs and Foundation Models for Single-Cell Analysis",
     category: "Single-cell",
+    image: "/files/Cell2Sentence_demo_infographic.png",
     summary: "An exploration of combining biological foundation models with LLMs for cellular reasoning.",
     methods: ["single-cell", "foundation models", "LLMs"],
     impact: "Maps emerging model capabilities to useful single-cell analysis workflows."
@@ -147,6 +148,7 @@ const projects = [
     date: "June 2025",
     title: "Reproducing GPT-2",
     category: "Model architecture",
+    image: "/files/nano_GPT-2_infographic.png",
     summary: "A from-scratch reproduction and training exercise for the 124M-parameter GPT-2 model.",
     methods: ["GPT-2", "transformers", "language modeling"],
     impact: "Builds practical intuition for transformer training, data pipelines, and language-model engineering."
