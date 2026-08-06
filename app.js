@@ -69,6 +69,7 @@ const projects = [
     date: "January 2026",
     title: "Pokemon Battle Agent",
     category: "AI agents",
+    image: "/files/Pokemon_battle_agent_infographic.jpg",
     summary: "A local LLM-powered battle agent that reasons over game state, move choices, and type advantages in real time.",
     methods: ["LLMs", "Ollama", "agent systems", "Python"],
     impact: "Demonstrates explainable, reasoning-based decisions in an interactive agent environment."
@@ -102,6 +103,7 @@ const projects = [
     date: "October 2025",
     title: "AlphaGenome U-Net Architecture",
     category: "Genomic AI",
+    image: "/files/AlphaGenome_infographic.jpg",
     summary: "An educational implementation of the U-Net core behind a large genomic sequence-to-function model.",
     methods: ["U-Net", "genomic sequence", "deep learning"],
     impact: "Turns a complex 450M-parameter genomic architecture into an inspectable learning resource."
@@ -111,6 +113,7 @@ const projects = [
     date: "August 2025",
     title: "DeepSeek-V3 Architecture",
     category: "Model architecture",
+    image: "/files/DeepSeek_infographic.jpg",
     summary: "An implementation-focused exploration of mixture-of-experts routing and multi-token prediction.",
     methods: ["LLMs", "mixture of experts", "model architecture"],
     impact: "Makes modern language-model design choices concrete through code and diagrams."
@@ -120,6 +123,7 @@ const projects = [
     date: "August 2025",
     title: "GPT-OSS Architecture",
     category: "Model architecture",
+    image: "/files/GPT-OSS_infographic.jpg",
     summary: "A hands-on implementation of an open-weight language model architecture and its core components.",
     methods: ["LLMs", "attention", "PyTorch"],
     impact: "Provides an implementation-first path for understanding contemporary LLM internals."
@@ -129,6 +133,7 @@ const projects = [
     date: "August 2025",
     title: "EVO2 DNA Foundation Model Demo",
     category: "Genomic AI",
+    image: "/files/Evo2_infographic.jpg",
     summary: "A working StripedHyena-based neural architecture for long-context DNA sequence modeling.",
     methods: ["foundation models", "DNA", "StripedHyena"],
     impact: "Connects long-context foundation-model ideas to practical genomic sequence analysis."
