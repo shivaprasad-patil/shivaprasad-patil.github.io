@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#073f3f"/>
+      <stop offset="1" stop-color="#102827"/>
+    </linearGradient>
+    <linearGradient id="portraitFade" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="white" stop-opacity="0"/>
+      <stop offset="0.22" stop-color="white" stop-opacity="1"/>
+    </linearGradient>
+    <mask id="portraitMask">
+      <rect x="690" width="510" height="630" fill="url(#portraitFade)"/>
+    </mask>
+  </defs>
+  <rect width="1200" height="630" fill="url(#background)"/>
+  <circle cx="104" cy="88" r="30" fill="#0b6e6b" stroke="#79d9ce" stroke-width="2"/>
+  <text x="104" y="98" fill="white" font-family="Arial, sans-serif" font-size="25" font-weight="700" text-anchor="middle">SP</text>
+  <text x="154" y="96" fill="#79d9ce" font-family="Arial, sans-serif" font-size="20" font-weight="700" letter-spacing="2">PREDICTIVE AI · BIOINFORMATICS</text>
+  <text x="72" y="207" fill="white" font-family="Arial, sans-serif" font-size="52" font-weight="700">Shivaprasad Patil, PhD</text>
+  <text x="72" y="267" fill="white" font-family="Arial, sans-serif" font-size="30">AI for better drug-discovery decisions</text>
+  <rect x="72" y="326" width="540" height="2" fill="#79d9ce"/>
+  <text x="72" y="383" fill="#c6dbd7" font-family="Arial, sans-serif" font-size="22">Multi-omics · Single-cell · Translational biomarkers</text>
+  <text x="72" y="535" fill="#f1c96d" font-family="Arial, sans-serif" font-size="25" font-weight="700">shivaprasad-patil.github.io</text>
+  <image x="690" y="0" width="510" height="680" preserveAspectRatio="xMidYMid slice" xlink:href="../profile-portrait.jpg" mask="url(#portraitMask)"/>
+  <rect x="690" y="0" width="12" height="630" fill="#e0a83a"/>
+</svg>

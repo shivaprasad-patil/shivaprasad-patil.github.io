@@ -5,7 +5,7 @@ const projects = [
     date: "August 2026",
     title: "OncoKG-RAG",
     category: "Biomedical AI",
-    image: "/files/OncoRAG_infographic.png",
+    image: "/files/OncoRAG_infographic-optimized.jpg",
     summary: "A real-data biomedical knowledge graph with template retrieval, local LLM synthesis, literature evidence, and graph analytics for drug discovery exploration.",
     methods: ["knowledge graphs", "KG-RAG", "Neo4j", "local LLMs"],
     github: "https://github.com/shivaprasad-patil/OncoKG-RAG",
@@ -18,7 +18,7 @@ const projects = [
     date: "May 2026",
     title: "Mini Virtual IFN Immune Cell",
     category: "Single-cell",
-    image: "https://shivaprasad-patil.github.io/files/virtual_ifn_cell_infographic.png",
+    image: "/files/virtual_ifn_cell_infographic-optimized.jpg",
     summary: "Perturbation-aware single-cell virtual cell prototype for interferon and COVID immune-state transitions.",
     methods: ["single-cell modeling", "perturbation learning", "immune-state prediction"],
     github: "https://github.com/shivaprasad-patil/virtual-ifn-cell",
@@ -31,7 +31,7 @@ const projects = [
     date: "September 2025",
     title: "MultiOmicsBind",
     category: "Multi-omics",
-    image: "https://shivaprasad-patil.github.io/files/MultiOmicsBind_infographic.png",
+    image: "/files/MultiOmicsBind_infographic-optimized.jpg",
     summary: "A multimodal framework inspired by ImageBind for aligning genomics, transcriptomics, proteomics, and metabolomics.",
     methods: ["multimodal learning", "representation alignment", "omics integration"],
     github: "https://github.com/shivaprasad-patil/MultiOmicsBind",
@@ -44,7 +44,7 @@ const projects = [
     date: "April 2026",
     title: "ScAdver",
     category: "Single-cell",
-    image: "https://shivaprasad-patil.github.io/files/ScAdver_infographic.png?v=20260419",
+    image: "/files/ScAdver_infographic-optimized.jpg",
     summary: "Adversarial batch correction for single-cell RNA-seq that preserves biology while reducing protocol effects.",
     methods: ["adversarial learning", "domain adaptation", "scRNA-seq"],
     github: "https://github.com/shivaprasad-patil/ScAdver",
@@ -57,7 +57,7 @@ const projects = [
     date: "January 2026",
     title: "BulkRNA-Agent",
     category: "AI agents",
-    image: "https://shivaprasad-patil.github.io/files/BulkRNA_Agent_infographic.png",
+    image: "/files/BulkRNA_Agent_infographic-optimized.jpg",
     summary: "AI-powered transcriptomics analysis with dual LLM reasoning and biomedical models from QC to enrichment.",
     methods: ["LLMs", "RNA-seq", "differential expression", "enrichment"],
     github: "https://github.com/shivaprasad-patil/BulkRNA-Agent",
@@ -69,9 +69,10 @@ const projects = [
     date: "January 2026",
     title: "Pokemon Battle Agent",
     category: "AI agents",
-    image: "/files/Pokemon_battle_agent_infographic.jpg",
+    image: "/files/Pokemon_battle_agent_infographic-optimized.jpg",
     summary: "A local LLM-powered battle agent that reasons over game state, move choices, and type advantages in real time.",
     methods: ["LLMs", "Ollama", "agent systems", "Python"],
+    github: "https://github.com/shivaprasad-patil/PokemonAgent",
     impact: "Demonstrates explainable, reasoning-based decisions in an interactive agent environment."
   },
   {
@@ -79,7 +80,7 @@ const projects = [
     date: "November 2025",
     title: "OmicsFormer",
     category: "Multi-omics",
-    image: "https://shivaprasad-patil.github.io/files/OmicsFormer.png",
+    image: "/files/OmicsFormer-optimized.jpg",
     summary: "A PyTorch transformer framework for multi-study omics integration with missing modalities and batch effects.",
     methods: ["transformers", "PyTorch", "mixture of experts", "SLE"],
     github: "https://github.com/shivaprasad-patil/OmicsFormer",
@@ -91,7 +92,7 @@ const projects = [
     date: "October 2025",
     title: "OmicsNet",
     category: "Multi-omics",
-    image: "https://shivaprasad-patil.github.io/files/OmicsNet_infographic.png",
+    image: "/files/OmicsNet_infographic-optimized.jpg",
     summary: "Feature-level network construction across omics modalities without requiring overlapping samples.",
     methods: ["network biology", "data integration", "feature graphs"],
     github: "https://github.com/shivaprasad-patil/OmicsNet",
@@ -103,9 +104,10 @@ const projects = [
     date: "October 2025",
     title: "AlphaGenome U-Net Architecture",
     category: "Genomic AI",
-    image: "/files/AlphaGenome_infographic.jpg",
+    image: "/files/AlphaGenome_infographic-optimized.jpg",
     summary: "An educational implementation of the U-Net core behind a large genomic sequence-to-function model.",
     methods: ["U-Net", "genomic sequence", "deep learning"],
+    github: "https://github.com/shivaprasad-patil/AlphaGenome-Model-Architecture",
     impact: "Turns a complex 450M-parameter genomic architecture into an inspectable learning resource."
   },
   {
@@ -113,9 +115,10 @@ const projects = [
     date: "August 2025",
     title: "DeepSeek-V3 Architecture",
     category: "Model architecture",
-    image: "/files/DeepSeek_infographic.jpg",
+    image: "/files/DeepSeek_infographic-optimized.jpg",
     summary: "An implementation-focused exploration of mixture-of-experts routing and multi-token prediction.",
     methods: ["LLMs", "mixture of experts", "model architecture"],
+    github: "https://github.com/shivaprasad-patil/DeepSeek-V3-Model-Architecture",
     impact: "Makes modern language-model design choices concrete through code and diagrams."
   },
   {
@@ -123,9 +126,10 @@ const projects = [
     date: "August 2025",
     title: "GPT-OSS Architecture",
     category: "Model architecture",
-    image: "/files/GPT-OSS_infographic.jpg",
+    image: "/files/GPT-OSS_infographic-optimized.jpg",
     summary: "A hands-on implementation of an open-weight language model architecture and its core components.",
     methods: ["LLMs", "attention", "PyTorch"],
+    github: "https://github.com/shivaprasad-patil/GPT-OSS-Architecture",
     impact: "Provides an implementation-first path for understanding contemporary LLM internals."
   },
   {
@@ -133,9 +137,10 @@ const projects = [
     date: "August 2025",
     title: "EVO2 DNA Foundation Model Demo",
     category: "Genomic AI",
-    image: "/files/Evo2_infographic.jpg",
+    image: "/files/Evo2_infographic-optimized.jpg",
     summary: "A working StripedHyena-based neural architecture for long-context DNA sequence modeling.",
     methods: ["foundation models", "DNA", "StripedHyena"],
+    github: "https://github.com/shivaprasad-patil/EVO2-Demo",
     impact: "Connects long-context foundation-model ideas to practical genomic sequence analysis."
   },
   {
@@ -143,9 +148,10 @@ const projects = [
     date: "July 2025",
     title: "LLMs and Foundation Models for Single-Cell Analysis",
     category: "Single-cell",
-    image: "/files/Cell2Sentence_demo_infographic.png",
+    image: "/files/Cell2Sentence_demo_infographic-optimized.jpg",
     summary: "An exploration of combining biological foundation models with LLMs for cellular reasoning.",
     methods: ["single-cell", "foundation models", "LLMs"],
+    github: "https://github.com/shivaprasad-patil/Cell2Sentenece-Demo",
     impact: "Maps emerging model capabilities to useful single-cell analysis workflows."
   },
   {
@@ -153,9 +159,10 @@ const projects = [
     date: "June 2025",
     title: "Reproducing GPT-2",
     category: "Model architecture",
-    image: "/files/nano_GPT-2_infographic.png",
+    image: "/files/nano_GPT-2_infographic-optimized.jpg",
     summary: "A from-scratch reproduction and training exercise for the 124M-parameter GPT-2 model.",
     methods: ["GPT-2", "transformers", "language modeling"],
+    github: "https://github.com/shivaprasad-patil/nano_GPT-2",
     impact: "Builds practical intuition for transformer training, data pipelines, and language-model engineering."
   }
 ];
@@ -706,6 +713,12 @@ function updateReadingProgress() {
 }
 
 async function initScienceScene() {
+  const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  const constrainedDevice = window.matchMedia("(max-width: 620px)").matches || navigator.connection?.saveData;
+  if (!scienceScene || reducedMotion || constrainedDevice) {
+    if (scienceScene) scienceScene.hidden = true;
+    return;
+  }
   try {
     const THREE = await import("https://cdn.jsdelivr.net/npm/three@0.178.0/build/three.module.js");
     const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
@@ -983,4 +996,8 @@ renderBooks();
 renderTimeline();
 renderSkills();
 showView();
-initScienceScene();
+if ("requestIdleCallback" in window) {
+  window.requestIdleCallback(initScienceScene, { timeout: 1600 });
+} else {
+  window.setTimeout(initScienceScene, 400);
+}
