@@ -134,6 +134,48 @@ a {
   text-underline-offset: 0.45rem;
 }
 
+.project-directory {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+  align-items: center;
+  margin-top: 2.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--line);
+}
+
+.project-directory .eyebrow {
+  flex-basis: 100%;
+}
+
+.project-directory a {
+  padding: 0.45rem 0.7rem;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--surface);
+  color: var(--teal-strong);
+  font-size: 0.88rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.project-directory a:hover {
+  border-color: var(--teal);
+}
+
+.seo-project-main {
+  padding: clamp(2rem, 5vw, 4.5rem) 0;
+}
+
+.seo-project-main .back-link {
+  display: inline-flex;
+  margin-bottom: 1.5rem;
+}
+
+.seo-project-main .project-post {
+  min-height: auto;
+}
+
 .icon-button,
 .dialog-close {
   display: inline-grid;

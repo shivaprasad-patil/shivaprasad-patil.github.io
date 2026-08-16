@@ -480,16 +480,16 @@ function projectCard(project) {
 
   return `
     <article class="project-card reveal-item">
-      <a class="project-visual-link" href="#project/${project.id}" aria-label="Read ${project.title} project post">
+      <a class="project-visual-link" href="/projects/${project.id}/" aria-label="Read ${project.title} project page">
         ${visual}
       </a>
       <div class="project-card-body">
         <div class="project-meta"><span class="chip">${project.category}</span><span>${project.date}</span></div>
-        <h3><a href="#project/${project.id}">${project.title}</a></h3>
+        <h3><a href="/projects/${project.id}/">${project.title}</a></h3>
         <p>${project.summary}</p>
         <div class="project-card-actions">
           <button type="button" data-project-id="${project.id}">Quick view</button>
-          <a href="#project/${project.id}">Read post</a>
+          <a href="/projects/${project.id}/">Read post</a>
           ${project.slides ? `<a href="${project.slides}" target="_blank" rel="noreferrer">Slides</a>` : ""}
         </div>
       </div>
@@ -531,7 +531,7 @@ function renderProjectDialog(project) {
     <p><strong>Why it matters:</strong> ${project.impact}</p>
     <div class="tag-cloud">${project.methods.map((method) => `<span>${method}</span>`).join("")}</div>
     <div class="dialog-actions">
-      <a class="button primary" href="#project/${project.id}">Read project post</a>
+      <a class="button primary" href="/projects/${project.id}/">Read project post</a>
       ${project.slides ? `<a class="button secondary" href="${project.slides}" target="_blank" rel="noreferrer">View slides</a>` : ""}
       ${project.github ? `<a class="button ghost" href="${project.github}" target="_blank" rel="noreferrer">GitHub</a>` : ""}
     </div>
@@ -590,7 +590,7 @@ function renderProjectPost(project) {
           <h2>Related projects</h2>
         </div>
         <div class="related-grid">${related.map((item) => `
-          <a href="#project/${item.id}">
+          <a href="/projects/${item.id}/">
             <span>${item.category}</span>
             <strong>${item.title}</strong>
             <small>${item.summary}</small>
@@ -599,8 +599,8 @@ function renderProjectPost(project) {
       </section>
     ` : ""}
     <nav class="project-pagination" aria-label="Project navigation">
-      <a href="#project/${previous.id}"><span>Previous project</span><strong>${previous.title}</strong></a>
-      <a href="#project/${next.id}"><span>Next project</span><strong>${next.title}</strong></a>
+      <a href="/projects/${previous.id}/"><span>Previous project</span><strong>${previous.title}</strong></a>
+      <a href="/projects/${next.id}/"><span>Next project</span><strong>${next.title}</strong></a>
     </nav>
   `;
   observeReveals();
@@ -926,9 +926,16 @@ function showView() {
     else link.removeAttribute("aria-current");
   });
 
-  document.title = project
-    ? `${project.title} | Shivaprasad Patil, PhD`
-    : `${view[0].toUpperCase()}${view.slice(1)} | Shivaprasad Patil, PhD`;
+  const viewTitles = {
+    about: "Shivaprasad Patil, PhD | Predictive AI and Bioinformatics",
+    projects: "AI and Bioinformatics Projects | Shivaprasad Patil, PhD",
+    publications: "Research Publications | Shivaprasad Patil, PhD",
+    books: "Recommended Books | Shivaprasad Patil, PhD",
+    experience: "Bioinformatics and AI Experience | Shivaprasad Patil, PhD",
+    education: "Education | Shivaprasad Patil, PhD",
+    contact: "Contact Shivaprasad Patil, PhD"
+  };
+  document.title = project ? `${project.title} | Shivaprasad Patil, PhD` : viewTitles[view];
   window.scrollTo({ top: 0, behavior: "auto" });
   requestAnimationFrame(updateReadingProgress);
 }
@@ -962,7 +969,7 @@ dialogClose.addEventListener("click", () => dialog.close());
 themeToggle.addEventListener("click", toggleTheme);
 randomProjectButton.addEventListener("click", () => {
   const project = projects[Math.floor(Math.random() * projects.length)];
-  window.location.hash = `project/${project.id}`;
+  window.location.href = `/projects/${project.id}/`;
 });
 window.addEventListener("hashchange", showView);
 window.addEventListener("scroll", updateReadingProgress, { passive: true });
